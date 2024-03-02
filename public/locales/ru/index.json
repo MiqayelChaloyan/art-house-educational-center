@@ -1,0 +1,24 @@
+{
+  "navigation": {
+    "about": "О НАС",
+    "branches": "ФИЛИАЛЫ",
+    "co-workers": "КОЛЛЕГИ"
+  },
+  "texts": {
+    "main-title": "УЧИТЬСЯ НИКОГДА НЕ ПОЗДНО",
+    "follow-us": "ПОДПИСЫВАЙТЕСЬ НА НАС",
+    "rights": "Все права защищены"
+  },
+  "section-titles": {
+    "partners": "КОЛЛЕГИ"
+  },
+  "adress": {
+    "street": "Ереван, ул. Абовяна 33, 0009"
+  },
+  "footer": {
+    "about-us": "О нас",
+    "branches": "Филиалы",
+    "programs": "Программы",
+    "partners": "Коллеги"
+  }
+}

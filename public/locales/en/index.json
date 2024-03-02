@@ -1,0 +1,24 @@
+{
+  "navigation": {
+    "about": "ABOUT US",
+    "branches": "BRANCHES",
+    "co-workers": "CO-WORKERS"
+  },
+  "texts": {
+    "main-title": "IT'S NEVER TOO LATE TO LEARN",
+    "follow-us": "FOLLOW US",
+    "rights": "All rights reserved"
+  },
+  "section-titles": {
+    "partners": "CO-WORKERS"
+  },
+  "adress": {
+    "street": "Yerevan, 33 Abovyan st., 0009"
+  },
+  "footer": {
+    "about-us": "About us",
+    "branches": "Branches",
+    "programs": "Programs",
+    "partners": "Co-Workers"
+  }
+}

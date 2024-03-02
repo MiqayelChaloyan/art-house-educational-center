@@ -1,0 +1,24 @@
+{
+  "navigation": {
+    "about": "ՄԵՐ ՄԱՍԻՆ",
+    "branches": "ՄԱՍՆԱՃՅՈՒՂԵՐ",
+    "co-workers": "ԳՈՐԾԸՆԿԵՐՆԵՐ"
+  },
+  "texts": {
+    "main-title": "ԵՐԲԵՔ ՈՒՇ ՉԷ ՍՈՎՈՐԵԼ",
+    "follow-us": "ՀԵՏԵՎԵՔ ՄԵԶ",
+    "rights": "Բոլոր իրավունքները պաշտպանված են"
+  },
+  "section-titles": {
+    "partners": "ԳՈՐԾԸՆԿԵՐՆԵՐ"
+  },
+  "adress": {
+    "street": "Երևան, Աբովյան 33 փ․, 0009"
+  },
+  "footer": {
+    "about-us": "Մեր մասին",
+    "branches": "Մասնաճյուղեր",
+    "programs": "Ծրագրեր",
+    "partners": "Գործընկերներ"
+  }
+}
