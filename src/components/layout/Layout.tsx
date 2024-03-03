@@ -22,19 +22,22 @@ const Layout: React.FC<LayoutProps> = ({ children, headerPosition }) => {
 
 	let content;
 
-	switch (pathname) {
-		case '/':
-			content = <ArtHouseLayout children={children} headerPosition={headerPosition} />
-			break;
-		case '/educational-center':
-			content = <EducationalCenterLayout children={children} headerPosition={headerPosition}/>
-			break;
-		case '/design' || '/it-m' || '/language':
-			console.log('11111111111111111111');
-			break;
-		default:
-			content = <ArtHouseLayout children={children} headerPosition={headerPosition} />
-	}
+switch (pathname) {
+  case '/':
+    content = <ArtHouseLayout headerPosition={headerPosition}>{children}</ArtHouseLayout>;
+    break;
+  case '/educational-center':
+    content = <EducationalCenterLayout headerPosition={headerPosition}>{children}</EducationalCenterLayout>;
+    break;
+  case '/design':
+  case '/it-m':
+  case '/language':
+    console.log('11111111111111111111');
+    break;
+  default:
+    content = <ArtHouseLayout headerPosition={headerPosition}>{children}</ArtHouseLayout>;
+}
+
 
 
 

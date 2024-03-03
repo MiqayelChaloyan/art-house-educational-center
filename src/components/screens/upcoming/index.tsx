@@ -52,23 +52,23 @@ const ComingSoon: NextPage = () => {
             <Container>
                 <div className={styles.row}>
                     <h3 className={styles.context}>Website is Under Maintenance</h3>
-                    <h1 className={styles.title}>We're <span>Launching</span> Soon</h1>
+                    <h1 className={styles.title}>We &apos re <span>Launching</span> Soon</h1>
                     <div className={styles.timer_wrapper}>
                         <div className={styles.timer_inner}>
                             <div className={styles.timer_segment}>
-                                <span className={styles.time}>{days < 10 ? `0` + days : days}</span>
+                                <span className={styles.time}>{days < 10 ? `0${days}` : days}</span>
                                 <span className={styles.label}>Days</span>
                             </div>
                             <div className={styles.timer_segment}>
-                                <span className={styles.time}>{hours < 10 ? `0` + hours : hours}</span>
+                                <span className={styles.time}>{hours < 10 ? `0${hours}` : hours}</span>
                                 <span className={styles.label}>Hours</span>
                             </div>
                             <div className={styles.timer_segment}>
-                                <span className={styles.time}>{minutes < 10 ? `0` + minutes : minutes}</span>
+                                <span className={styles.time}>{minutes < 10 ? `0${minutes}` : minutes}</span>
                                 <span className={styles.label}>Minutes</span>
                             </div>
                             <div className={styles.timer_segment}>
-                                <span className={styles.time}>{seconds < 10 ? `0` + seconds : seconds}</span>
+                                <span className={styles.time}>{seconds < 10 ? `0${seconds}` : seconds}</span>
                                 <span className={styles.label}>Seconds</span>
                             </div>
                         </div>
