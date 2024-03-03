@@ -1,0 +1,45 @@
+.container
+    background-image: url('../../../../../../public/assets/images/art-house/background.png') 
+    background-repeat: round
+    background-size: contain
+    background-position: inherit  
+    margin: 0 auto
+    height: 800px
+    position: relative
+    top: -90px
+    z-index: 0
+    @media screen and ( max-width: 991px )
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        margin: 0 auto
+        height: max-content
+        position: relative
+        top: -41px
+        z-index: 0
+    @media screen and ( max-width: 767px )
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        margin: 0 auto
+        height: max-content
+        position: relative
+        top: -15px
+        z-index: 0
+
+.cards
+    display: flex
+    justify-content: space-evenly
+    width: 100%
+    margin: 17% auto
+    @media screen and ( max-width: 767px )
+        display: none
+
+.slider
+    display: none
+    justify-content: center
+    align-items: center
+    width: 95%
+    margin: 29px auto
+    @media screen and ( max-width: 767px )
+       display: block

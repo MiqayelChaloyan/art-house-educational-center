@@ -1,0 +1,114 @@
+.container
+    bottom: 66px
+    position: relative
+    background: #E3E1E1
+    @media screen and ( max-width: 991px )
+       bottom: 40px
+    @media screen and ( max-width: 767px )
+       bottom: 20px
+
+.skew 
+    display: block
+    height: 94px
+    width: 103%
+    position: relative
+    bottom: 58px
+    &:after 
+      height: 94px
+      width: 36%
+      background: #E3E1E1
+      margin: 0 auto
+      position: absolute
+      content: ''
+      right: 0
+      transform: skew(-40deg)
+    @media screen and (max-device-width: 1400px) 
+      height: 60px
+      width: 103%
+      position: relative
+      bottom: 58px
+      &:after 
+        height: 110px
+        width: 40%
+        background: #E3E1E1
+        right: 0
+    @media screen and (max-device-width: 1200px) 
+      height: 94px
+      width: 103%
+      position: relative
+      bottom: 58px
+      &:after 
+        height: 110px
+        width: 36%
+        background: #E3E1E1
+        right: 0
+    @media screen and ( max-width: 991px )
+      height: 6px
+      width: 103%
+      position: relative
+      bottom: 40px
+      &:after 
+        height: 44px
+        width: 36%
+        background: #E3E1E1
+        right: 0
+    @media screen and ( max-width: 767px )
+      height: 62px
+      background: #E3E1E1
+      width: 120%
+      &:after 
+        height: 64px
+        width: 105%
+        background: #E3E1E1
+
+.title
+    position: absolute
+    margin: 0 auto
+    font-size: 35px
+    padding-right: var(--container-gap)
+    padding-left: var(--container-gap)
+    top: 10px
+    width: 85%
+    text-align: end
+    z-index: 10
+    font-weight: bold
+    @media screen and (max-device-width: 1600px) 
+       width: 87%
+    @media screen and (max-device-width: 1400px) 
+       top: 10px
+       font-size: 23px
+    @media screen and (max-device-width: 1200px) 
+       top: 17px
+       font-size: 23px
+       width: 92%
+       z-index: 1
+    @media screen and ( max-width: 991px )
+       width: 90%
+       top: 10px
+       font-size: 16px
+       right: 74px
+       z-index: 1
+    @media screen and ( max-width: 767px )
+       width: 88%
+       top: 10px
+       font-size: 27px
+       text-align: center
+       z-index: 1
+
+.specialists
+   height: 420px
+   position: relative
+   bottom: 142px
+   @media screen and (max-device-width: 1600px) 
+       padding: 0
+   @media screen and (max-device-width: 1200px) 
+       padding: 0
+   @media screen and ( max-width: 991px )
+       padding-top: 0
+       height: 297px
+       position: relative
+       bottom: 41px
+   @media screen and ( max-width: 767px )
+       display: block
+       height: 600px
+       bottom: 40px

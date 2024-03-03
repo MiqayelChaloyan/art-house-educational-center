@@ -1,8 +1,32 @@
 import Layout from "@/components/layout/Layout";
 import Head from "next/head";
+import Header from "./Header";
+import { FC, useEffect } from "react";
+import { useAppDispatch } from "@/hooks/useStore";
+import { closeModal } from "@/store/stateModalSlice";
+import About from "./About";
+import VideoPlayer from "./VideoPlayer";
+import { EDUCATIONAL_CENTER_DEFAULT } from "../../../../../sanity/sanity-queries/educational-center";
+import CookingCourses from "./CookingCourses";
+import Progress from "./Progress";
+import Specialists from "./Specialists";
+import OurRating from "./OurRating";
 
 
-const EducationalCenterHome = () => {
+type Props = {
+    data: EDUCATIONAL_CENTER_DEFAULT[]
+    isError: boolean,
+};
+
+const EducationalCenterHome: FC<Props> = ({ data, isError }) => {
+    const dispatch = useAppDispatch();
+
+    useEffect(() => {
+        dispatch(closeModal());
+    }, []);
+
+    console.log(data, '----->>>>>');
+
 
     return (
         <Layout headerPosition='fixed'>
@@ -10,7 +34,13 @@ const EducationalCenterHome = () => {
                 <title>Educational Center</title>
                 <meta name='description' content='Educational Center' />
             </Head>
-            <h1>Educational Center</h1>
+            <Header data={data} />
+            <About data={data} />
+            <VideoPlayer data={data} />
+            <CookingCourses data={data} />
+            <Progress data={data} />
+            <Specialists data={data} />
+            <OurRating data={data} />
         </Layout>
     )
 }

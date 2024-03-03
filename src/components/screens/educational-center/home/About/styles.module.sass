@@ -1,0 +1,174 @@
+.container
+    bottom: 66px
+    position: relative
+    background: #E3E1E1
+    height: 620px
+    @media screen and ( max-width: 991px )
+       bottom: 40px
+       height: max-content
+    @media screen and ( max-width: 767px )
+       bottom: 20px
+       height: max-content
+
+.about_us
+   display: flex
+   justify-content: space-around
+   align-items: center
+   height: 428px
+   @media screen and (max-device-width: 1600px) 
+       padding: 0
+   @media screen and (max-device-width: 1200px) 
+       padding: 0
+   @media screen and ( max-width: 991px )
+       display: flex
+       align-items: flex-start
+       height: 480px
+   @media screen and ( max-width: 767px )
+       display: block
+       height: max-content
+   h2
+      font-family: sans-serif
+      font-size: 24px
+      @media screen and ( max-width: 991px )
+        text-align: center
+        padding: 35px 0 35px 0
+      @media screen and ( max-width: 767px )
+        text-align: center
+        padding: 35px 0 35px 0
+   p
+     font-family: sans-serif
+     width: 80%
+     padding-right: var(--container-gap)
+     padding-left: var(--container-gap)
+     font-size: 18px
+     text-align: left
+     @media screen and (max-device-width: 1400px) 
+       width: 100%
+       font-size: 16px
+     @media screen and (max-width: 1200px )
+       width: 90%
+       font-size: 16px
+     @media screen and ( max-width: 991px )
+       width: 90%
+       font-size: 12px
+     @media screen and ( max-width: 767px )
+       margin: 0 auto   
+       width: 100%
+       text-align: center
+       margin-bottom: 7px
+       font-size: 16px
+
+.about_us_img
+    width: 50%
+    @media screen and (max-device-width: 1200px) 
+      width: 50%
+    @media screen and (max-device-width: 1600px) 
+      width: 50%
+    @media screen and ( max-width: 991px )
+      width: 50%
+      margin: 70px auto
+    @media screen and ( max-width: 767px )
+      width: 100%
+      padding-bottom: 12px
+      margin: 0 auto
+
+.about_box
+    width: 100%
+    @media screen and (max-device-width: 1200px) 
+      width: 100%
+    @media screen and (max-device-width: 1600px) 
+      width: 100%
+    @media screen and ( max-width: 991px )
+      width: 70%
+    @media screen and ( max-width: 767px )
+      width: 100%
+
+.skew 
+    display: block
+    height: 57px
+    width: 50%
+    position: relative
+    transform: skew(44deg)
+    bottom: 58px
+    &:after 
+      height: 60px
+      width: 110%
+      background: #E3E1E1
+      margin: 0 auto
+      position: absolute
+      content: ''
+      right: 0
+    @media screen and (max-device-width: 1400px) 
+      height: 50px
+      background: #E3E1E1
+      width: 38%
+      bottom: 50px
+      &:after 
+        height: 55px
+        width: 100%
+        background: #E3E1E1
+        right: 50px
+    @media screen and (max-device-width: 1290px) 
+      height: 55px
+      background: #E3E1E1
+      width: 50%
+      &:after 
+        height: 55px
+        width: 100%
+        background: #E3E1E1
+        right: 50px
+    @media screen and ( max-width: 991px )
+      height: 47px
+      background: #E3E1E1
+      width: 45%
+      bottom: 45px
+      &:after 
+        height: 55px
+        width: 100%
+        background: #E3E1E1
+        right: 50px
+    @media screen and ( max-width: 767px )
+      height: 62px
+      background: #E3E1E1
+      width: 120%
+      &:after 
+        height: 64px
+        width: 105%
+        background: #E3E1E1
+
+.title
+    font-family: sans-serif
+    position: absolute
+    margin: 0 auto
+    width: 100%
+    top: -45px
+    font-size: 35px
+    padding-right: var(--container-gap)
+    padding-left: var(--container-gap)
+    @media screen and (max-device-width: 1400px) 
+       top: -31px
+       font-size: 23px
+    @media screen and (max-device-width: 1200px) 
+       top: -31px
+       font-size: 23px
+    @media screen and ( max-width: 991px )
+       width: 28%
+       top: -30px
+       font-size: 16px
+    @media screen and ( max-width: 767px )
+       width: 85%
+       top: -10px
+       font-size: 27px
+       text-align: center
+
+.img_courses
+    width: 380px
+    height: 380px
+    margin: 0 auto
+    @media screen and ( max-width: 991px )
+      width: 250px
+      height: 250px
+    @media screen and ( max-width: 767px )
+      margin-bottom: 45px
+      width: 325px
+      height: 325px
