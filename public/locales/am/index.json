@@ -1,24 +1,62 @@
 {
   "navigation": {
-    "about": "ՄԵՐ ՄԱՍԻՆ",
-    "branches": "ՄԱՍՆԱՃՅՈՒՂԵՐ",
-    "co-workers": "ԳՈՐԾԸՆԿԵՐՆԵՐ"
+    "about": "Մեր մասին",
+    "branches": "Մասնաճյուղեր",
+    "co-workers": "Գործընկերներ",
+    "price-list": "Գնացուցակ",
+    "courses": "Դասընթացներ"
   },
   "texts": {
     "main-title": "ԵՐԲԵՔ ՈՒՇ ՉԷ ՍՈՎՈՐԵԼ",
     "follow-us": "ՀԵՏԵՎԵՔ ՄԵԶ",
-    "rights": "Բոլոր իրավունքները պաշտպանված են"
+    "rights": "Բոլոր իրավունքները պաշտպանված են",
+    "rating-title": "Art House ուսումնական կենտրոն"
   },
   "section-titles": {
     "partners": "ԳՈՐԾԸՆԿԵՐՆԵՐ"
-  },
-  "adress": {
-    "street": "Երևան, Աբովյան 33 փ․, 0009"
   },
   "footer": {
     "about-us": "Մեր մասին",
     "branches": "Մասնաճյուղեր",
     "programs": "Ծրագրեր",
     "partners": "Գործընկերներ"
+  },
+  "pages": {
+    "co-worker": "Գործընկերներ",
+    "courses": "Դասընթացներ",
+    "about_courses": "Դասընթացների մասին",
+    "courses_process": "Դասընթացի ընթացքի մասին",
+    "student_work": "Ուսանողների աշխատանքները",
+    "price_list": "Գնացուցակ",
+    "about": "Մեր մասին",
+    "news": "Նորություններ",
+    "specialists": "Մասնագետներ",
+    "rating": "Մեր վարկանիշը"
+  },
+  "adress": {
+    "adress": "Հասցե: Երևան, Աբովյան 33",
+    "street": "Հայաստան, Երևան, Աբովյան 33"
+  },
+  "button": {
+    "contact-us": "Կապ մեզ հետ",
+    "view-more": "Դիտել ավելին",
+    "show-less": "Ցույց տալ ավելի քիչ"
+  },
+  "contact-us": {
+    "title": "ԿԱՊՎԵԼ ՄԵԶ ՀԵՏ",
+    "name": "Անուն",
+    "email": "Փոստի հասցե",
+    "phone-number": "Հեռախոսահամար",
+    "message": "Հաղորդագրություն",
+    "send": "Ուղարկել",
+    "loading": "Բեռնվում է"
+  },
+  "price-list": {
+    "days": "օր",
+    "hour": "ժամ"
+  },
+  "contact": {
+    "tell": "Հեռ.",
+    "email": "Էլ."
   }
 }

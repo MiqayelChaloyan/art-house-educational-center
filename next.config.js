@@ -32,4 +32,5 @@ module.exports = {
     defaultLocale: 'am',
     locales: ['am', 'ru', 'en'],
   },
+  
 }

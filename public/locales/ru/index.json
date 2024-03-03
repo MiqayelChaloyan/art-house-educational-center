@@ -1,24 +1,62 @@
 {
   "navigation": {
-    "about": "О НАС",
+    "about": "О нас",
     "branches": "ФИЛИАЛЫ",
-    "co-workers": "КОЛЛЕГИ"
+    "courses": "Курсы",
+    "co-workers": "Коллеги",
+    "price-list": "Прайс-лист"
   },
   "texts": {
     "main-title": "УЧИТЬСЯ НИКОГДА НЕ ПОЗДНО",
     "follow-us": "ПОДПИСЫВАЙТЕСЬ НА НАС",
-    "rights": "Все права защищены"
+    "rights": "Все права защищены",
+    "rating-title": "Учебный центр Art House"
   },
   "section-titles": {
     "partners": "КОЛЛЕГИ"
-  },
-  "adress": {
-    "street": "Ереван, ул. Абовяна 33, 0009"
   },
   "footer": {
     "about-us": "О нас",
     "branches": "Филиалы",
     "programs": "Программы",
     "partners": "Коллеги"
+  },
+  "pages": {
+    "co-worker": "Сотрудники",
+    "courses": "Курсы",
+    "about_courses": "О курсах",
+    "courses_process": "Процесс курса",
+    "student_work": "Студенческие работы",
+    "price_list": "Прайс-лист",
+    "about": "О нас",
+    "news": "Новости",
+    "specialists": "Специалисты",
+    "rating": "Наш рейтинг"
+  },
+  "adress": {
+    "adress": "Адрес: Ереван, Абовяна 33",
+    "street": "Армения, Ереван, Абовяна 33"
+  },
+  "button": {
+    "contact-us": "Связаться с нами",
+    "view-more": "Посмотреть больше",
+    "show-less": "Показывай меньше"
+  },
+  "contact-us": {
+    "title": "СВЯЗАТЬСЯ С НАМИ",
+    "name": "Имя",
+    "email": "Электронная почта",
+    "phone-number": "Номер телефона",
+    "message": "Сообщение",
+    "send": "Отправлять",
+    "loading": "Загрузка"
+  },
+  "price-list": {
+    "days": "ден",
+    "hour": "час"
+  },
+  "contact": {
+    "tell": "Телл.",
+    "email": "Эл. почта"
   }
 }

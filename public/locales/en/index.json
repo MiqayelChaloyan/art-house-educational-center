@@ -1,24 +1,62 @@
 {
   "navigation": {
-    "about": "ABOUT US",
+    "about": "About us",
     "branches": "BRANCHES",
-    "co-workers": "CO-WORKERS"
+    "courses": "Courses",
+    "co-workers": "Co-Workers",
+    "price-list": "Price List"
   },
   "texts": {
     "main-title": "IT'S NEVER TOO LATE TO LEARN",
     "follow-us": "FOLLOW US",
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+    "rating-title": "Art House Learning Center"
   },
   "section-titles": {
     "partners": "CO-WORKERS"
-  },
-  "adress": {
-    "street": "Yerevan, 33 Abovyan st., 0009"
   },
   "footer": {
     "about-us": "About us",
     "branches": "Branches",
     "programs": "Programs",
     "partners": "Co-Workers"
+  },
+  "pages": {
+    "co-worker": "Co-workers",
+    "courses": "Courses",
+    "about_courses": "About courses",
+    "courses_process": "Courses process",
+    "student_work": "Student Work",
+    "price_list": "Price List",
+    "about": "About us",
+    "news": "News",
+    "specialists": "Specialists",
+    "rating": "Our rating"
+  },
+  "adress": {
+    "adress": "Adress: Yerevan, Abovyan 33",
+    "street": "Armenia, Yereva, Abovyan 33"
+  },
+  "button": {
+    "contact-us": "Contact Us",
+    "view-more": "View more",
+    "show-less": "Show less"
+  },
+  "contact-us": {
+    "title": "CONTACT US",
+    "name": "Name",
+    "email": "Email",
+    "phone-number": "Phone Number",
+    "message": "Message",
+    "send": "Send",
+    "loading": "Loading"
+  },
+  "price-list": {
+    "days": "days",
+    "hour": "hour"
+  },
+  "contact": {
+    "tell": "Tell.",
+    "email": "Email"
   }
 }

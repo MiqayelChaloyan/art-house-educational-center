@@ -1,0 +1,135 @@
+.container
+    bottom: 66px
+    position: relative
+    background: var(--color-black)
+    @media screen and ( max-width: 991px )
+       bottom: 40px
+    @media screen and ( max-width: 767px )
+       bottom: 20px
+       height: 352px
+
+.title
+    font-family: sans-serif
+    position: absolute
+    margin: 0 auto
+    width: 100%
+    top: -50px
+    font-size: 35px
+    color: var(--color-white)
+    padding-right: var(--container-gap)
+    padding-left: var(--container-gap)
+    @media screen and (max-device-width: 1400px) 
+       top: -31px
+       font-size: 23px
+    @media screen and (max-device-width: 1200px) 
+       top: -31px
+       font-size: 23px
+    @media screen and ( max-width: 991px )
+       width: 100%
+       top: -30px
+       font-size: 16px
+    @media screen and ( max-width: 767px )
+       width: 100%
+       top: -13px
+       font-size: 27px
+       text-align: center
+       right: 0
+       left: 0
+
+.video_player
+   display: flex
+   justify-content: space-around
+   align-items: baseline
+   height: 721px
+   @media screen and (max-device-width: 1600px) 
+       padding: 0
+   @media screen and (max-device-width: 1200px) 
+       padding: 0
+   @media screen and ( max-width: 991px )
+       display: flex
+       padding-top: 10px
+       height: 399px
+   @media screen and ( max-width: 767px )
+       display: block
+       height: 250px
+       padding-top: 0
+
+.skew 
+    display: block
+    height: 57px
+    width: 55%
+    position: relative
+    transform: skew(44deg)
+    bottom: 72px
+    &:after 
+      height: 80px
+      width: 110%
+      background: var(--color-black)
+      margin: 0 auto
+      position: absolute
+      content: ''
+      right: 0
+    @media screen and (max-device-width: 1400px) 
+      height: 50px
+      background: var(--color-black)
+      width: 50%
+      bottom: 50px
+      &:after 
+        height: 55px
+        width: 100%
+        background: var(--color-black)
+        right: 50px
+    @media screen and (max-device-width: 1290px) 
+      height: 50px
+      background: var(--color-black)
+      width: 50%
+      &:after 
+        height: 55px
+        width: 100%
+        background: var(--color-black)
+        right: 50px
+    @media screen and ( max-width: 991px )
+      height: 47px
+      background: var(--color-black)
+      width: 50%
+      bottom: 45px
+      &:after 
+        height: 55px
+        width: 100%
+        background: var(--color-black)
+        right: 50px
+    @media screen and ( max-width: 767px )
+      height: 62px
+      background: var(--color-black)
+      width: 120%
+      &:after 
+        height: 64px
+        width: 105%
+        background: var(--color-black)
+
+.player
+    width: 95%
+    height: 550px
+    top: 4%
+    margin: 0 auto
+    position: relative
+    @media screen and (max-device-width: 1400px) 
+       height: 600px
+    @media screen and ( max-width: 991px )
+       width: 90%
+       height: 272px
+    @media screen and ( max-width: 767px )
+       height: 210px
+       width: 100%
+
+.image 
+    object-fit: cover
+    height: 500px
+    width: 100%
+    @media screen and ( max-width: 991px )
+       height: 350px !important
+    @media screen and ( max-width: 767px )
+       height: 200px !important
+
+.icon
+    position: absolute
