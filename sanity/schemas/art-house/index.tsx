@@ -1,22 +1,22 @@
 import ArrayMaxItems from "@/utils/ArrayMaxItems";
 import { defineArrayMember } from "sanity";
 
-const art_house_center = {
+const homeSchemaArtHouse = {
     name: 'art-house-home',
     type: 'document',
-    title: 'ART-HOUSE-HOME',
-    id: 'art_house_center',
+    title: 'Home',
+    id: 'art-house-home',
     fields: [
         {
-            name: 'pageName',
-            title: 'Page Name',
+            name: 'name',
+            title: 'Name',
             type: 'string',
         },
         {
             name: 'our_websites',
             type: 'array',
             title: 'Websites',
-            components: { input: ArrayMaxItems },
+            // components: { input: ArrayMaxItems },
             of: [
                 {
                     name: 'Object',
@@ -99,7 +99,7 @@ const art_house_center = {
             name: 'progress_section',
             type: 'array',
             title: 'Progress Section',
-            components: { input: ArrayMaxItems },
+            // components: { input: ArrayMaxItems },
             validation: (Rule: any) => Rule.max(4),
             description: 'Ոչ պակաս, քան չորս և ոչ ավելի, միայն դուք կարող եք դրանք փոփոխել',
             of: [
@@ -188,4 +188,4 @@ const art_house_center = {
     ],
 };
 
-export default art_house_center;
+export default homeSchemaArtHouse;

@@ -3,15 +3,14 @@ import React, { FC, memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-
 // Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-import styles from './styles.module.sass';
-
 import { ART_HOUSE_HOME } from '../../../../sanity/sanity-queries/art-house';
+
+import styles from './styles.module.sass';
 
 type Props = {
     cards: ART_HOUSE_HOME[]

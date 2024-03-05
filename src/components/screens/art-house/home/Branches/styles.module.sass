@@ -8,32 +8,60 @@
     position: relative
     top: -90px
     z-index: 0
-    @media screen and ( max-width: 991px )
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+        background-repeat: round
+        background-size: contain
+        background-position: inherit  
+        margin: 0 auto
+        height: 800px
+        position: relative
+        top: -90px
+        z-index: 0    
+    /* xl */
+    @media screen and ( max-width: 1280px )
+        background-repeat: round
+        background-size: contain
+        background-position: inherit  
+        margin: 0 auto
+        height: 600px
+        position: relative
+        top: -90px
+        z-index: 0    
+    /* lg */
+    @media screen and ( max-width: 1024px )
         background-repeat: no-repeat
         background-size: cover
         background-position: center
         margin: 0 auto
-        height: max-content
+        height: 580px
         position: relative
-        top: -41px
-        z-index: 0
-    @media screen and ( max-width: 767px )
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center
-        margin: 0 auto
-        height: max-content
-        position: relative
-        top: -15px
-        z-index: 0
+        top: -43px
+        z-index: 0    
+    /* md */
+    @media screen and ( max-width: 768px )
+        background-color: rgb(95, 95, 95)
+        background-image: none    
+        top: 0
+        height: 519px
+    /* sm */
+    @media screen and ( max-width: 640px )
+        background-color: rgb(95, 95, 95)
+        background-image: none
+        height: 476px
+
 
 .cards
     display: flex
     justify-content: space-evenly
     width: 100%
     margin: 17% auto
-    @media screen and ( max-width: 767px )
+    /* lg */
+    @media screen and ( max-width: 1024px )
+        margin: 20% auto  
+    @media screen and ( max-width: 768px )
         display: none
+
 
 .slider
     display: none
@@ -41,5 +69,5 @@
     align-items: center
     width: 95%
     margin: 29px auto
-    @media screen and ( max-width: 767px )
+    @media screen and ( max-width: 768px )
        display: block

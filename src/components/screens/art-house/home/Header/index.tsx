@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import { useTranslation } from 'react-i18next';
 
 import Container from '@/components/components/container';

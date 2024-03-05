@@ -52,7 +52,7 @@ const ComingSoon: NextPage = () => {
             <Container>
                 <div className={styles.row}>
                     <h3 className={styles.context}>Website is Under Maintenance</h3>
-                    <h1 className={styles.title}>We &apos re <span>Launching</span> Soon</h1>
+                    <h1 className={styles.title}>Were <span>Launching</span> Soon</h1>
                     <div className={styles.timer_wrapper}>
                         <div className={styles.timer_inner}>
                             <div className={styles.timer_segment}>

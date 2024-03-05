@@ -1,4 +1,4 @@
-import { InputProps, defineConfig } from 'sanity';
+import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
 import { schema } from './sanity/schema';
 import { visionTool } from '@sanity/vision';

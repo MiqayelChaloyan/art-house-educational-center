@@ -1,6 +1,6 @@
 import { type SchemaTypeDefinition } from 'sanity';
 
-import art_house_center from './schemas/art-house';
+import homeSchemaArtHouse from './schemas/art-house';
 // import art_house_design from './schemas/design';
 // import art_house_itm from './schemas/it-m';
 // import art_house_language from './schemas/language';
@@ -12,7 +12,7 @@ import coursesSchemaEducationalCenter from './schemas/educational-center/courses
 import coWorkersSchemaEducationalCenter from './schemas/educational-center/co-workers-schema';
 
 export const schemaTypes = [
-  art_house_center,
+  homeSchemaArtHouse,
   // art_house_design,
   // art_house_itm,
   // art_house_language,

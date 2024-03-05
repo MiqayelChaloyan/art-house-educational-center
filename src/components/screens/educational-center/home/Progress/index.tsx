@@ -3,7 +3,7 @@ import { FC, memo } from 'react';
 
 
 import styles from './styles.module.sass';
-import ProgressBar from '@/components/ui/progressBar';
+import ProgressItem from '@/components/ui/progress';
 import Container from '@/components/components/container';
 import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
 
@@ -17,7 +17,7 @@ const Progress: FC<Props> = ({ data }) => {
     const items = uploadProgress.map((item: any) => {
         return (
             <div key={item.slug} className={styles.column}>
-                <ProgressBar value={0} quantity={item.quantity} />
+                <ProgressItem value={0} quantity={item.quantity} />
                 <p className={styles.title}>{item.title}</p>
             </div>
         );

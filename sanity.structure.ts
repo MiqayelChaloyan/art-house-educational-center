@@ -3,8 +3,21 @@ export default (S: any) =>
         .title('Base')
         .items([
             ...S.documentTypeListItems().filter(
-                (listItem: any) => !['co-workers', 'about-us', 'courses'].includes(listItem.getId())
+                (listItem: any) => !['art-house-home', 'co-workers', 'about-us', 'courses'].includes(listItem.getId())
             ),
+
+            S.listItem()
+                .title('ART-HOUSE-HOME')
+                .child(
+                    S.list()
+                        .title('Pages')
+                        .items([
+                            S.listItem()
+                                .title('Home')
+                                .child(S.document().schemaType('art-house-home').documentId('art-house-home')),
+                        ])
+                ),
+
             S.listItem()
                 .title('ART-HOUSE-EDUCATIONAL-CENTER')
                 .child(
@@ -18,16 +31,16 @@ export default (S: any) =>
                                 .title('Courses')
                                 .child(
                                     S.documentList()
-                                      .title('Courses')
-                                      .filter('_type == "courses"')
-                                  ),
+                                        .title('Courses')
+                                        .filter('_type == "courses"')
+                                ),
                             S.listItem()
                                 .title('Co-Workers')
                                 .child(
                                     S.documentList()
-                                      .title('Co-Workers')
-                                      .filter('_type == "co-workers"')
-                                  )
+                                        .title('Co-Workers')
+                                        .filter('_type == "co-workers"')
+                                )
                         ])
                 ),
 

@@ -8,7 +8,7 @@ import { ArianAMU, inter } from '@/constants/font';
 
 import styles from './styles.module.sass';
 
-interface BranchWebProps {
+interface BranchProps {
     item: {
         company_name: string;
         words: string;
@@ -18,9 +18,9 @@ interface BranchWebProps {
     };
 };
 
-const BranchWeb: React.FC<BranchWebProps> = ({ item }) => {
+const Branch: React.FC<BranchProps> = ({ item }) => {
     const { company_name, words, web_site_url, website_logo_front, website_logo_back } = item;
-
+    
     const urlForImageFront = urlFor(website_logo_front)
         .auto('format')
         .fit('max')
@@ -41,8 +41,8 @@ const BranchWeb: React.FC<BranchWebProps> = ({ item }) => {
             <div className={styles.card_container}>
                 <div className={styles.card}>
                     <div className={styles.front}>
-                        <div className={styles.logo}>
-                            <img src={urlForImageFront} alt={company_name} className={styles.img} />
+                        <div className={styles.logo_front}>
+                            <img src={urlForImageFront} alt={company_name} className={styles.logo} />
                         </div>
                         <div className={styles.words}>
                             <p className={`${styles.title_front} ${ArianAMU.className}`}>{company_name}</p>
@@ -51,7 +51,7 @@ const BranchWeb: React.FC<BranchWebProps> = ({ item }) => {
                     </div>
                     <div className={styles.back}>
                         <div className={styles.logo_back}>
-                            <img src={urlForImageBack} alt={company_name} className={styles.img} />
+                            <img src={urlForImageBack} alt={company_name} className={styles.logo} />
                         </div>
                         <div className={styles.words}>
                             <p className={`${styles.title_back} ${ArianAMU.className}`}>{company_name}</p>
@@ -64,5 +64,5 @@ const BranchWeb: React.FC<BranchWebProps> = ({ item }) => {
     );
 };
 
-export default memo(BranchWeb);
+export default memo(Branch);
 

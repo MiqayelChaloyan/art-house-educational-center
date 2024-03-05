@@ -2,7 +2,7 @@ import { memo, useEffect, useState } from 'react';
 
 import styles from './styles.module.sass';
 
-const ProgressBar = ({ value = 0, quantity }) => {
+const ProgressItem = ({ value = 0, quantity }) => {
     const [percent, setPercent] = useState(value);
 
     useEffect(() => {
@@ -14,4 +14,4 @@ const ProgressBar = ({ value = 0, quantity }) => {
     return <p className={styles.percent}>{percent}</p>;
 };
 
-export default memo(ProgressBar);
+export default memo(ProgressItem);

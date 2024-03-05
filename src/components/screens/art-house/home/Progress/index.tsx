@@ -2,7 +2,7 @@ import { FC, memo } from 'react';
 
 import Container from '@/components/components/container';
 
-import ProgressBar from '@/components/ui/progressBar';
+import ProgressItem from '@/components/ui/progress';
 
 import { inter } from '@/constants/font';
 
@@ -20,7 +20,7 @@ const Progress: FC<Props> = ({ data }) => {
     
     const items = uploadProgress.map((item: any) => (
         <div key={item.slug} className={styles.column}>
-            <ProgressBar value={0} quantity={item.quantity} />
+            <ProgressItem value={0} quantity={item.quantity} />
             <p className={`${styles.title} ${inter.className}`}>{item.title}</p>
         </div>
     ));

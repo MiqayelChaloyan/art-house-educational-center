@@ -7,8 +7,11 @@ import { EffectCoverflow, FreeMode, Pagination } from 'swiper/modules';
 
 import Partner from '@/components/ui/parnter';
 
+import useWindowSize from '@/hooks/useWindowSize';
 
 import { inter } from '@/constants/font';
+
+import { ART_HOUSE_HOME } from '../../../../../../sanity/sanity-queries/art-house';
 
 // Swiper styles
 import 'swiper/css';
@@ -16,8 +19,6 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 import styles from './styles.module.sass';
-import useWindowSize from '@/hooks/useWindowSize';
-import { ART_HOUSE_HOME } from '../../../../../../sanity/sanity-queries/art-house';
 
 type Props = {
     data: ART_HOUSE_HOME
@@ -35,7 +36,9 @@ const Partners: FC<Props> = ({ data }) => {
 
     return (
         <div id="co-workers" className={styles.container}>
-            <h2 className={`${styles.title} ${inter.className}`}>{t('section-titles.partners')}</h2>
+            <h2 className={`${styles.title} ${inter.className}`}>
+                {t('section-titles.partners')}
+            </h2>
             <div className={styles.desktop}>
                 <Swiper
                     slidesPerView={size.width <= 991 ? 4 : 9}
