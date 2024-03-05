@@ -14,7 +14,7 @@ export default (S: any) =>
                         .items([
                             S.listItem()
                                 .title('Home')
-                                .child(S.document().schemaType('art-house-home').documentId('art-house-home')),
+                                .child(S.document().schemaType('art-house-home').documentId('art-house')),
                         ])
                 ),
 

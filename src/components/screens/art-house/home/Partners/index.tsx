@@ -21,14 +21,14 @@ import 'swiper/css/pagination';
 import styles from './styles.module.sass';
 
 type Props = {
-    data: ART_HOUSE_HOME
+    data: ART_HOUSE_HOME[]
 };
 
 const Partners: FC<Props> = ({ data }) => {
     const { t } = useTranslation();
     const size = useWindowSize();
 
-    const items = data.co_workers.map((item: any) =>
+    const items = data.map((item: any) =>
         <SwiperSlide key={item._key}>
             <Partner item={item} />
         </SwiperSlide>
@@ -41,7 +41,7 @@ const Partners: FC<Props> = ({ data }) => {
             </h2>
             <div className={styles.desktop}>
                 <Swiper
-                    slidesPerView={size.width <= 991 ? 4 : 9}
+                    slidesPerView={size.width <= 1280 ? 6 : 9}
                     spaceBetween={90}
                     freeMode={true}
                     pagination={{

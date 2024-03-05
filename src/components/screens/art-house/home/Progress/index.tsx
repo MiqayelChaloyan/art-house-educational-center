@@ -12,11 +12,11 @@ import styles from './styles.module.sass';
 
 
 type Props = {
-    data: ART_HOUSE_HOME
+    data: ART_HOUSE_HOME[]
 };
 
 const Progress: FC<Props> = ({ data }) => {
-    const uploadProgress = data.progress_section.slice(0, 4);
+    const uploadProgress = data.slice(0, 4);
     
     const items = uploadProgress.map((item: any) => (
         <div key={item.slug} className={styles.column}>

@@ -10,11 +10,11 @@ import { ART_HOUSE_HOME } from '../../../../../../sanity/sanity-queries/art-hous
 import styles from './styles.module.sass';
 
 type Props = {
-    data: ART_HOUSE_HOME
+    data: ART_HOUSE_HOME[]
 };
 
 const Branches: FC<Props> = ({ data }) => {
-    const cards = data.our_websites.map((item: any) => <Branch key={item.slug} item={item} />);
+    const cards = data.map((item: any) => <Branch key={item.slug} item={item} />);
 
     return (
         <div id='branches' className={styles.container}>
@@ -22,6 +22,7 @@ const Branches: FC<Props> = ({ data }) => {
                 <div className={styles.cards}>
                     {cards}
                 </div>
+
                 <div className={styles.slider}>
                     <Carousel cards={cards} />
                 </div>

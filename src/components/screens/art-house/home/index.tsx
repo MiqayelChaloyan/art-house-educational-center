@@ -19,12 +19,10 @@ type HomeProps = {
 };
 
 const Home: FC<HomeProps> = ({ data, isError }) => {
+	const { our_websites, progress_section, co_workers } = data;
 
-	console.log(data);
-	
-	
-	if(!data.our_websites || !data.progress_section || !data.co_workers) {
-		return <PageNotFoundError/>
+	if (!our_websites || !progress_section || !co_workers) {
+		return <PageNotFoundError />
 	}
 
 	return (
@@ -34,9 +32,9 @@ const Home: FC<HomeProps> = ({ data, isError }) => {
 				<meta name='description' content='Art House Holding' />
 			</Head>
 			<Header />
-			<Branches data={data} />
-			<Progress data={data} />
-			<Partners data={data} />
+			<Branches data={our_websites} />
+			<Progress data={progress_section} />
+			<Partners data={co_workers} />
 		</Layout>
 	)
 };

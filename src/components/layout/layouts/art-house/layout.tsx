@@ -1,8 +1,8 @@
 import React from 'react';
-import Meta from '@/components/seo/Meta';
+import Meta from '@/components/seo/art-house-meta';
 
-import HeaderDefault from './Header';
-import FooterDefault from './Footer';
+import Header from './Header';
+import Footer from './Footer';
 
 interface LayoutProps {
 	children: React.ReactNode
@@ -14,10 +14,10 @@ const ArtHouseLayout: React.FC<LayoutProps> = ({ children, headerPosition }) => 
         <Meta>
             <div className="wrapper">
                 <div className="wrapper-content">
-                    <HeaderDefault typePosition={`${headerPosition === 'fixed' ? 'fixed' : 'sticky'}`} />
+                    <Header typePosition={`${headerPosition === 'fixed' ? 'fixed' : 'sticky'}`} />
                     <main className="wrapper-main">{children}</main>
                 </div>
-                <FooterDefault />
+                <Footer />
             </div>
             {/* <ModalLoading /> */}
         </Meta>

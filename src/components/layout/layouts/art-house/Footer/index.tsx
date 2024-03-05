@@ -52,16 +52,16 @@ const Footer = () => {
                     <div>
                         <h2 className={`${styles.hosts_title} ${inter.className}`}>{t('texts.follow-us')}</h2>
                         <div className={styles.hosts}>
-                            <Link href={Hosts.facebook} aria-label='Facebook' className={styles.icon} target="_blank">
+                            <Link href={Hosts.facebook} aria-label='Facebook' className={styles.social_network} target="_blank">
                                 <Facebook width='40' height='40' fill='white' />
                             </Link>
-                            <Link href={Hosts.gmail} aria-label='Gmail' className={styles.icon} target="_blank">
+                            <Link href={Hosts.gmail} aria-label='Gmail' className={styles.social_network} target="_blank">
                                 <Gmail width='40' height='40' fill='white' />
                             </Link>
-                            <Link href={Hosts.instagram} aria-label='Instagram' className={styles.icon} target="_blank">
+                            <Link href={Hosts.instagram} aria-label='Instagram' className={styles.social_network} target="_blank">
                                 <Instagram width='40' height='40' fill='white' />
                             </Link>
-                            <Link href={Hosts.linkedin} aria-label='LinkedIn' className={styles.icon} target="_blank">
+                            <Link href={Hosts.linkedin} aria-label='LinkedIn' className={styles.social_network} target="_blank">
                                 <Linkedin width='40' height='40' fill='white' />
                             </Link>
                         </div>
