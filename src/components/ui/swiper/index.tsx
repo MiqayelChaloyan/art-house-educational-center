@@ -8,12 +8,10 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-import { ART_HOUSE_HOME } from '../../../../sanity/sanity-queries/art-house';
-
 import styles from './styles.module.sass';
 
 type Props = {
-    cards: ART_HOUSE_HOME[]
+    cards: JSX.Element[]
 };
 
 const Carousel: FC<Props> = ({ cards })  => {

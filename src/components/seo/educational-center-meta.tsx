@@ -2,12 +2,12 @@ import { FC, PropsWithChildren } from 'react';
 
 import { DefaultSeo } from 'next-seo';
 
-const seoTitle = 'Art House Holding';
-const seoDescription = 'At Art House, we pride ourselves on being a dynamic training center that offers a diverse array of courses to ignite your passion and elevate your skills.';
-const seoUrl = 'https://art-house-holding.vercel.app/en';
-const seoOGImage = 'https://mir-s3-cdn-cf.behance.net/projects/404/89da2f34070754.Y3JvcCw5NTgsNzQ5LDk3LDE4.jpg';
-const seoOGImageAlt = 'Art House Holding';
-const seoSiteName = 'Art House Holding';
+const seoTitle = 'Art Educational Center';
+const seoDescription = 'Through immersive classes, ART teaches you the skills you need in your future career as a successful and competitive professional.';
+const seoUrl = 'https://arthouse.am/';
+const seoOGImage = 'https://images.squarespace-cdn.com/content/v1/63ed0c8e54d11151a02d1803/52c3f2b6-fbf3-469b-880f-bb3181827cc0/Training%2BCenter%2BConference%2BRoom%2BMockup.jpg';
+const seoOGImageAlt = 'ART Educational Center';
+const seoSiteName = 'ART Educational Center';
 const seoLocale = 'en';
 
 const Meta: FC<PropsWithChildren> = ({ children }) => {

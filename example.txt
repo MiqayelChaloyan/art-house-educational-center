@@ -1,22 +1,19 @@
-/* 
-@media (min-width:320px) and (max-width:480px){
-    
-}
-@media (min-width:481px) and (max-width:767px){
-    .sec1__mini1{
-        display: none;
-    }
-    .sec1__mini2{
-        width: 100%;
-        text-align: center;
-    }
-}
-@media (min-width:768px) and (max-width:1024px){
-    
-}
-@media (min-width:1024px) and (max-width:1280px){
-    
-}
-@media (min-width:1281px){
-
-} */
+   background-color: gray
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+        background-color: black
+    /* xl */
+    @media screen and ( max-width: 1280px )
+        background-color: green
+    /* lg */
+    @media screen and ( max-width: 1024px )
+        background-color: yellow
+    /* md */
+    @media screen and ( max-width: 768px )
+        background-color: orange
+    /* sm */
+    @media screen and ( max-width: 640px )
+        background-color: white
+    /* xs */
+    @media screen and ( max-width: 475px )
+        background-color: red 

@@ -5,8 +5,10 @@ import { useTranslation } from 'react-i18next';
 import Container from '@/components/components/container';
 
 import { inter } from '@/constants/font';
+import { ImagePaths } from '@/constants/index';
 
 import styles from './styles.module.sass';
+
 
 const Header = () => {
     const { t } = useTranslation();
@@ -17,7 +19,7 @@ const Header = () => {
                 <div className={styles.row}>
                     <div className={styles.column}>
                         <Image
-                            src={require('../../../../../../public/assets/images/art-house/watch.png')}
+                            src={ImagePaths.ART_HOUSE_HOLDING.watchURL}
                             alt='watch'
                             priority
                             className={styles.watch}
@@ -27,9 +29,9 @@ const Header = () => {
                             style={{ objectFit: 'cover' }}
                         />
                     </div>
-                    <div className={styles.text_column}>
+                    <div className={styles.column}>
                         <Image
-                            src={require('../../../../../../public/assets/images/art-house/artHouseLogo.png')}
+                            src={ImagePaths.ART_HOUSE_HOLDING.logoURL}
                             alt='art_house_logo'
                             priority
                             className={styles.art_house_logo}
@@ -40,9 +42,9 @@ const Header = () => {
                         />
                         <p className={`${styles.text} ${inter.className}`}>{t('texts.main-title')}</p>
                     </div>
-                    <div className={styles.flash_light_column}>
+                    <div className={styles.column}>
                         <Image
-                            src={require('../../../../../../public/assets/images/art-house/flashLight.png')}
+                            src={ImagePaths.ART_HOUSE_HOLDING.flashLightURL}
                             alt='flash_light'
                             priority
                             className={styles.flash_light}
@@ -56,6 +58,6 @@ const Header = () => {
             </Container>
         </div>
     );
-}
+};
 
 export default Header;

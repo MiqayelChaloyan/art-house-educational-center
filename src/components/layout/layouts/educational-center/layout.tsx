@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import Meta from '@/components/seo/Meta';
+import Meta from '@/components/seo/educational-center-meta';
 import Modal from '@/components/layout/layouts/educational-center/Modal';
 
 import Header from './Header';
