@@ -1,40 +1,25 @@
 .container
-    bottom: 66px
-    position: relative
     background: var(--color-black)
-    @media screen and ( max-width: 991px )
-       bottom: 40px
-    @media screen and ( max-width: 767px )
-       bottom: 20px
-       height: 352px
+    position: relative
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      height: 800px !important
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      height: 700px !important
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      height: 550px !important
+    /* md */
+    @media screen and ( max-width: 768px )
+      height: 480px !important
+    /* sm */
+    @media screen and ( max-width: 640px )
+      height: 390px !important
+    /* xs */
+    @media screen and ( max-width: 475px )
+      height: 373px !important
 
-.title
-    font-family: sans-serif
-    position: absolute
-    margin: 0 auto
-    width: 100%
-    top: -50px
-    font-size: 35px
-    color: var(--color-white)
-    padding-right: var(--container-gap)
-    padding-left: var(--container-gap)
-    @media screen and (max-device-width: 1400px) 
-       top: -31px
-       font-size: 23px
-    @media screen and (max-device-width: 1200px) 
-       top: -31px
-       font-size: 23px
-    @media screen and ( max-width: 991px )
-       width: 100%
-       top: -30px
-       font-size: 16px
-    @media screen and ( max-width: 767px )
-       width: 100%
-       top: -13px
-       font-size: 27px
-       text-align: center
-       right: 0
-       left: 0
 
 .video_player
    display: flex
@@ -54,58 +39,6 @@
        height: 250px
        padding-top: 0
 
-.skew 
-    display: block
-    height: 57px
-    width: 55%
-    position: relative
-    transform: skew(44deg)
-    bottom: 72px
-    &:after 
-      height: 80px
-      width: 110%
-      background: var(--color-black)
-      margin: 0 auto
-      position: absolute
-      content: ''
-      right: 0
-    @media screen and (max-device-width: 1400px) 
-      height: 50px
-      background: var(--color-black)
-      width: 50%
-      bottom: 50px
-      &:after 
-        height: 55px
-        width: 100%
-        background: var(--color-black)
-        right: 50px
-    @media screen and (max-device-width: 1290px) 
-      height: 50px
-      background: var(--color-black)
-      width: 50%
-      &:after 
-        height: 55px
-        width: 100%
-        background: var(--color-black)
-        right: 50px
-    @media screen and ( max-width: 991px )
-      height: 47px
-      background: var(--color-black)
-      width: 50%
-      bottom: 45px
-      &:after 
-        height: 55px
-        width: 100%
-        background: var(--color-black)
-        right: 50px
-    @media screen and ( max-width: 767px )
-      height: 62px
-      background: var(--color-black)
-      width: 120%
-      &:after 
-        height: 64px
-        width: 105%
-        background: var(--color-black)
 
 .player
     width: 95%
@@ -113,23 +46,137 @@
     top: 4%
     margin: 0 auto
     position: relative
-    @media screen and (max-device-width: 1400px) 
-       height: 600px
-    @media screen and ( max-width: 991px )
-       width: 90%
-       height: 272px
-    @media screen and ( max-width: 767px )
-       height: 210px
-       width: 100%
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      height: 600px !important
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      height: 450px !important
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      height: 350px !important
+    /* md */
+    @media screen and ( max-width: 768px )
+      height: 300px !important
+      width: 90%
+    /* sm */
+    @media screen and ( max-width: 640px )
+      height: 269px !important
+      padding-top: 20px
+    /* xs */
+    @media screen and ( max-width: 475px )
+      height: 248px !important
+      padding-top: 0
+
 
 .image 
     object-fit: cover
     height: 500px
     width: 100%
-    @media screen and ( max-width: 991px )
-       height: 350px !important
-    @media screen and ( max-width: 767px )
-       height: 200px !important
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      height: 600px !important
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      height: 450px !important
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      height: 350px !important
+    /* md */
+    @media screen and ( max-width: 768px )
+      height: 300px !important
+    /* sm */
+    @media screen and ( max-width: 640px )
+      height: 250px !important
+    /* xs */
+    @media screen and ( max-width: 475px )
+      height: 250px !important
 
 .icon
     position: absolute
+
+
+.triangle
+    display: block
+    height: 50px
+    width: 55%
+    position: relative
+    transform: skew(44deg)
+    bottom: 60px
+    &:after 
+      height: 60px
+      width: 110%
+      background: var(--color-black)
+      margin: 0 auto
+      position: absolute
+      content: ''
+      right: 0
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      bottom: 43px
+      &:after 
+        height: 45px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      bottom: 42px
+      &:after 
+        height: 45px
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      bottom: 41px
+      &:after 
+        height: 45px
+    /* md */
+    @media screen and ( max-width: 768px )
+      bottom: 35px
+      &:after 
+        height: 37px
+    /* sm */
+    @media screen and ( max-width: 640px )
+      display: none
+
+
+.title
+    font-family: sans-serif
+    position: absolute
+    margin: 0 auto
+    width: 100%
+    color: white
+    top: 10px
+    font-size: 48px
+    padding-right: var(--container-gap)
+    padding-left: var(--container-gap)
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      font-size: 33px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      font-size: 30px
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      font-size: 27px
+      top: 0
+    /* md */
+    @media screen and ( max-width: 768px )
+      font-size: 24px
+      top: 10px
+    /* sm */
+    @media screen and ( max-width: 640px )
+      top: 25px
+      text-align: center
+      width: 100%
+      position: relative
+      margin-bottom: 20px
+    /* xs */
+    @media screen and ( max-width: 475px )
+      top: 15px
+      text-align: center
+      width: 100%
+      position: relative
+      margin-bottom: 20px
+      padding-right: 0
+      padding-left: 0
+
+
+
+

@@ -4,15 +4,17 @@ import Meta from '@/components/seo/art-house-meta';
 import Header from './Header';
 import Footer from './Footer';
 
-interface LayoutProps {
-	children: React.ReactNode
-	headerPosition?: 'fixed' | 'sticky'
+interface Props {
+    children: React.ReactNode
+    headerPosition?: 'fixed' | 'sticky'
 };
 
-const ArtHouseLayout: React.FC<LayoutProps> = ({ children, headerPosition }) => {
+const color = 'var(--color-white)';
+
+const ArtHouseLayout: React.FC<Props> = ({ children, headerPosition }) => {
     return (
         <Meta>
-            <div className="wrapper">
+            <div className="wrapper" style={{ backgroundColor: color }}>
                 <div className="wrapper-content">
                     <Header typePosition={`${headerPosition === 'fixed' ? 'fixed' : 'sticky'}`} />
                     <main className="wrapper-main">{children}</main>

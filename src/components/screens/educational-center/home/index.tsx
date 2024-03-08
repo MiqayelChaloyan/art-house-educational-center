@@ -25,9 +25,6 @@ const EducationalCenterHome: FC<Props> = ({ data, isError }) => {
         dispatch(closeModal());
     }, []);
 
-    console.log(data, '----->>>>>');
-
-
     return (
         <Layout headerPosition='fixed'>
             <Head>
@@ -35,10 +32,12 @@ const EducationalCenterHome: FC<Props> = ({ data, isError }) => {
                 <meta name='description' content='Educational Center' />
             </Head>
             <Header data={data} />
+
             <About data={data} />
             <VideoPlayer data={data} />
-            <CookingCourses data={data} />
+            <CookingCourses data={data} />  
             <Progress data={data} />
+            
             <Specialists data={data} />
             <OurRating data={data} />
         </Layout>

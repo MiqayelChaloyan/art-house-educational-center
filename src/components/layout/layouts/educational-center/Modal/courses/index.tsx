@@ -29,7 +29,7 @@ const CoursesModal: FC<CoursesModalProps> = ({ courses }) => {
     };
 
     const coursesList = courses.map((course: any) => (
-        <Link href={`/courses/${course.slug}`} aria-label={course.course_name} key={course._id} className={styles.link}>
+        <Link href={`/educational-center/${course.slug}`} aria-label={course.course_name} key={course._id} className={styles.link}>
             <p className={styles.course}>{course.course_name}</p>
         </Link>
     ));

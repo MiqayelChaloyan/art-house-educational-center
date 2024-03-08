@@ -1,16 +1,19 @@
 import { FC, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import Container from '@/components/components/container';
+
 import Courses from './Courses';
 
+import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
 
 import styles from './styles.module.sass';
-import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
-import Container from '@/components/components/container';
+
 
 type Props = {
     data: EDUCATIONAL_CENTER_DEFAULT[]
 };
+
 
 const CookingCourses: FC<Props> = ({ data }) => {
     const newsItems = data[0].news_section.slice(0, 3);
@@ -22,7 +25,7 @@ const CookingCourses: FC<Props> = ({ data }) => {
 
     return (
         <div id='cooking-courses' className={styles.container}>
-            <div className={styles.skew} />
+            <div className={styles.triangle} />
             <Container>
                 <h1 className={styles.title}>{t('pages.news')}</h1>
                 <div className={styles.cooking_courses}>
