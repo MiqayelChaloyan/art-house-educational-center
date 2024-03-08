@@ -72,7 +72,7 @@ const Header = ({ typePosition }: IHeaderProps) => {
             `${isOpenMenu ? styles.boxOpenMenu : ''}`
         )}>
             <div className={`container ${styles.wrap}`}>
-                <Link href='/' aria-label='home' className={cn(styles.logo, `${isSticky ? styles.logoSticky : ''}`)}>
+                <Link href='/educational-center' aria-label='home' className={cn(styles.logo, `${isSticky ? styles.logoSticky : ''}`)}>
                     <Logo
                         width='162'
                         height='44'
@@ -85,7 +85,7 @@ const Header = ({ typePosition }: IHeaderProps) => {
                     `${isSticky && isOpenMenu ? styles.contentSticky : ''}`,
                 )}>
                     <div className={styles.nav}>
-                        <Link href='/' aria-label='about' className={`${styles.link} ${pathname === '/' ? styles.linkActive : ''}`}>{t('navigation.about')}</Link>
+                        <Link href='/educational-center' aria-label='about' className={`${styles.link} ${pathname === '/educational-center' ? styles.linkActive : ''}`}>{t('navigation.about')}</Link>
                         <Button
                             text={t('navigation.courses')}
                             onClick={() => {
@@ -94,8 +94,8 @@ const Header = ({ typePosition }: IHeaderProps) => {
                             }}
                             className={styles.btn}
                         />
-                        <Link href='/co_workers' aria-label='co-workers' className={`${styles.link} ${pathname === '/co_workers' ? styles.linkActive : ''}`}>{t('navigation.co-workers')}</Link>
-                        <Link href='/price_list' aria-label='price-list' className={`${styles.link} ${pathname === '/price_list' ? styles.linkActive : ''}`}>{t('navigation.price-list')}</Link>
+                        <Link href='/educational-center/co-workers' aria-label='co-workers' className={`${styles.link} ${pathname === '/educational-center/co-workers' ? styles.linkActive : ''}`}>{t('navigation.co-workers')}</Link>
+                        <Link href='/educational-center/price-list' aria-label='price-list' className={`${styles.link} ${pathname === '/educational-center/price-list' ? styles.linkActive : ''}`}>{t('navigation.price-list')}</Link>
                     </div>
 
                     <div>

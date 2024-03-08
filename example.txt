@@ -1,19 +1,19 @@
-   background-color: gray
+    background: red
     /* 2xl */
     @media screen and ( max-width: 1536px )
-        background-color: black
+      background-color: blue
     /* xl */
     @media screen and ( max-width: 1280px )
-        background-color: green
+      background-color: green
     /* lg */
     @media screen and ( max-width: 1024px )
-        background-color: yellow
+      background-color: yellow
     /* md */
     @media screen and ( max-width: 768px )
-        background-color: orange
+      background-color: orange
     /* sm */
     @media screen and ( max-width: 640px )
-        background-color: white
+      background-color: white
     /* xs */
     @media screen and ( max-width: 475px )
-        background-color: red 
+      background-color: gray 

@@ -5,19 +5,21 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import { NextArrow } from '@/components/ui/NextArrow';
-import { PrevArrow } from '@/components/ui/PrevArrow';
+import { NextArrow, PrevArrow } from '@/components/ui/react-slick-arrow';
+
+import Container from '@/components/components/container';
+
 import Item from './Item';
 
+import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
 
 import styles from './styles.module.sass';
 
-import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
-import Container from '@/components/components/container';
 
 type SectionCoursesProps = {
     data: EDUCATIONAL_CENTER_DEFAULT[]
 };
+
 
 const Specialists: FC<SectionCoursesProps> = ({ data }) => {
     const { t } = useTranslation();
@@ -45,12 +47,9 @@ const Specialists: FC<SectionCoursesProps> = ({ data }) => {
 
     return (
         <div id='specialists' className={styles.container}>
-            <div className={styles.skew}>
-                <div className={styles.title}>
-                    {t('pages.specialists')}
-                </div>
-            </div>
+            <div className={styles.triangle} />
             <Container>
+                <h1 className={styles.title}>{t('pages.specialists')}</h1>
                 <div className={styles.specialists}>
                     <Slider {...settings}>
                         {slidesItems}
@@ -62,3 +61,5 @@ const Specialists: FC<SectionCoursesProps> = ({ data }) => {
 };
 
 export default memo(Specialists);
+
+

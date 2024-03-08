@@ -1,13 +1,14 @@
-import { useRouter } from 'next/router';
-import dynamic from 'next/dynamic';
 import React from 'react';
 
-interface LayoutProps {
+import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic';
+
+interface Props {
   children: React.ReactNode;
   headerPosition?: 'fixed' | 'sticky';
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, headerPosition }) => {
+const Layout: React.FC<Props> = ({ children, headerPosition }) => {
   const router = useRouter();
   const { pathname } = router;
 

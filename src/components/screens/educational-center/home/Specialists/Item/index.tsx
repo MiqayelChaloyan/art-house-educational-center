@@ -91,7 +91,7 @@ const Item = ({ item }: any) => {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: 'contain' }}
                 />
             </div>
             <div className={styles.box}>

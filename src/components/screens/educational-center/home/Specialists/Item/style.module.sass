@@ -11,7 +11,7 @@
     align-items: center
     @media screen and ( max-width: 991px )
        display: flex !important
-       align-items: flex-end
+       align-items: center
     @media screen and ( max-width: 767px )
        display: block !important
 
@@ -22,20 +22,31 @@
     width: 420px
     object-fit: cover
     border-radius: 40px
-    @media screen and (max-device-width: 1600px)
-    @media screen and (max-device-width: 1400px) 
-       height: 400px 
-       width: 300px
-    @media screen and (max-device-width: 1200px) 
-       height: 493px 
-       width: 360px
-    @media screen and ( max-width: 991px )
-       height: 286px 
-       width: 100%
-    @media screen and ( max-width: 767px )
-       height: 289px 
-       width: 60%
-       border-radius: 20px
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      height: 800px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      height: 700px
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      height: 420px
+    /* md */
+    @media screen and ( max-width: 768px )
+      height: 324px
+      object-fit: contain !important
+      width: 50%
+    /* sm */
+    @media screen and ( max-width: 640px )
+      height: 324px
+      object-fit: contain !important
+      width: 50%
+    /* xs */
+    @media screen and ( max-width: 475px )
+      height: 324px
+      object-fit: contain !important
+      width: 50%
+
 
 .box_img
     display: flex
@@ -49,6 +60,7 @@
        width: 30%
     @media screen and ( max-width: 767px )
        width: 100%
+
 
 .subtitle  
     text-align: left
@@ -66,6 +78,7 @@
        width: 100%
        margin-top: 24px
        font-size: 16px
+
 
 .img_small
     display: flex 
@@ -86,12 +99,14 @@
       width: 78px
       border-radius: 10px
 
+
 .box
     justify-content: center
     margin-top: 95px
     @media screen and ( max-width: 991px )
        margin: 0
        padding-left: 10px
+
 
 .images_block
     display: flex
@@ -100,9 +115,11 @@
     @media screen and ( max-width: 767px )
        display: flex
 
+
 .title_section
     @media screen and ( max-width: 991px )
        text-align: center
+
 
 .contact_btn
     display: flex
@@ -124,30 +141,70 @@
         background-color: #E3E1E1
         border: 3px solid #C62020
         color: #C62020
-    @media screen and ( max-width: 991px )
-        width: 35%
-        height: 33px
-        font-size: 12px
-        margin: 5px
-        &:hover
-         background-color: #C62020
-         border: none
-    @media screen and ( max-width: 767px )
-        font-size: 16px
-        padding: 8px 20px
-        width: 64%
-        height: 43px
-        margin: 20px auto
-        &:hover
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      font-size: 16px
+      padding: 8px 20px
+      width: 48%
+      height: 43px
+      margin: 19px 0 19px 0
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      font-size: 16px
+      padding: 8px 20px
+      width: 48%
+      height: 43px
+      margin: 19px 0 19px 0    
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      font-size: 16px
+      padding: 8px 20px
+      width: 48%
+      height: 43px
+      margin: 19px 0 19px 0
+    /* md */
+    @media screen and ( max-width: 768px )
+      font-size: 16px
+      padding: 8px 20px
+      width: 27%
+      height: 43px
+      margin: 20px auto
+      &:hover
          background-color: #C62020
          border: none
          color: white
+    /* sm */
+    @media screen and ( max-width: 640px )
+      font-size: 16px
+      padding: 8px 20px
+      width: 27%
+      height: 43px
+      margin: 20px auto
+      &:hover
+         background-color: #C62020
+         border: none
+         color: white
+    /* xs */
+    @media screen and ( max-width: 475px )
+      font-size: 16px
+      padding: 8px 20px
+      width: 27%
+      height: 43px
+      margin: 20px auto
+      &:hover
+         background-color: #C62020
+         border: none
+         color: white
+
+
          
+
 .slider
     @media screen and ( max-width: 991px )
        margin-top: 126px
     @media screen and ( max-width: 767px )
        margin-top: 124px
+
 
 .button 
    width: 2rem 
@@ -160,6 +217,7 @@
    top: 45% 
    right: -1rem 
 
+
 .point
    width: 14px
    height: 14px
@@ -171,6 +229,7 @@
    @media screen and ( max-width: 767px )
       width: 10px
       height: 10px
+
 
 .header
    display: flex

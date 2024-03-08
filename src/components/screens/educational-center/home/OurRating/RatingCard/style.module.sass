@@ -1,41 +1,158 @@
-.row 
-	margin: 0 -5px
-	&:after 
-		content: "" 
-		display: table 
-		clear: both 
+.column
+	float: left
+	width: 30%
+	height: 360px
+	padding: 0 10px
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	border-radius: 50px
+	/* 2xl */
+	@media screen and ( max-width: 1536px )
+		width: 360px
+		height: 360px
+	/* xl */
+	@media screen and ( max-width: 1280px )
+		width: 280px
+		height: 280px
+	/* lg */
+	@media screen and ( max-width: 1024px )
+		width: 288px
+		height: 288px
+	@media screen and ( max-width: 993px )
+		width: 220px
+		height: 220px
+	/* md */
+	@media screen and ( max-width: 768px )
+		width: 200px
+		height: 200px
+	@media screen and ( max-width: 661px )
+		width: 190px
+		height: 190px
+	/* sm */
+	@media screen and ( max-width: 640px )
+		width: 334px
+		height: 334px
+	/* xs */
+	@media screen and ( max-width: 475px )
+		width: 236px
+		height: 236px
+
+.card
+	display: flex
+	background-color: white
+	width: 39%
+	padding: 10px
+	border-radius: 10px
+	/* 2xl */
+	@media screen and ( max-width: 1536px )
+		width: 37%
+	
+	
+
+.left_part, .right_part
+	width: 150px
+	margin: 5px
+
+.name
+	font-size: 13px
+	/* xl */
+	@media screen and ( max-width: 1280px )
+		font-size: 11px
+
+.user_image
+	/* 2xl */
+	@media screen and ( max-width: 1536px )
+		width: 120px
+
+
+
+
+
+.card_header
+	width: 40%
+	height: 42px
+	display: flex
+	justify-content: space-evenly
+	align-items: center
+	background-color: white
+	padding: 2px
+	border-radius: 10px 
+	margin-bottom: 20px 
+	/* 2xl */
+	@media screen and ( max-width: 1536px )
+		width: 37%
+	/* xl */
+	@media screen and ( max-width: 1280px )
+		width: 36%
+	/* lg */
+	@media screen and ( max-width: 1024px )
+		width: 32%
+	/* md */
+	@media screen and ( max-width: 768px )
+		background-color: orange
+	/* sm */
+	@media screen and ( max-width: 640px )
+		background-color: white
+	/* xs */
+	@media screen and ( max-width: 475px )
+		background-color: red
+
+
+.fix
+	width: 45%
+	position: absolute
+	top: 70px
+	padding: 10px
+	/* 2xl */
+	@media screen and ( max-width: 1536px )
+		width: 60%
+	/* xl */
+	@media screen and ( max-width: 1280px )
+		margin-top: 0  !important
+	/* lg */
+	@media screen and ( max-width: 1024px )
+		top: 26px
+	/* md */
+	@media screen and ( max-width: 768px )
+	/* sm */
+	@media screen and ( max-width: 640px )
+	/* xs */
+	@media screen and ( max-width: 475px )
+
+
+
+.content
+	font-size: 12px !important
+	text-align: left
+	margin-left: 7px
+	margin-top: 0
+	/* xl */
+	@media screen and ( max-width: 1280px )
+		font-size: 11px !important
+
+
+
+
 
 .card_header_text
 	p
 		font-size: 13px
-	@media screen and ( max-width: 991px )
+	/* xl */
+	@media screen and ( max-width: 1280px )
 		p
-			font-size: 8px 
+			font-size: 11px 
 	@media screen and ( max-width: 767px )
 		p
 			font-size: 10px 
+
 
 .card_header_icon
 	background-color: #4f2d6e
 	padding: 5px 6px 7px 7px
 	height: 31px
 
-.card_background
-	float: left
-	width: 600px
-	height: 198px
-	padding: 0 10px 
-	background-size: cover
-	background-position: center center
-	background-repeat: no-repeat
-	border-radius: 10px 
-	@media screen and (max-device-width: 1400px)
-		height: 110px 
-		width: 460px 
-	@media screen and ( max-width: 767px )
-		width: 300px 
-		display: block
-		margin-bottom: 20px 
+
 
 .rating
 	display: flex
@@ -50,138 +167,37 @@
 		margin-bottom: 0
 		margin-left: 0
 
-.content
-	font-size: 12px !important
-	text-align: left
-	margin-left: 7px
-	margin-top: -6px
-	@media screen and (max-device-width: 1400px)
-		font-size: 8px !important
-		margin-left: 5px !important
-		margin-top: 5px !important
-	@media screen and ( max-width: 991px )
-		margin-left: 0
-		margin-top: 0
-		font-size: 7px !important
-	@media screen and ( max-width: 767px )
-		margin-left: 20px
-		margin-top: 0
-		font-size: 7px !important
+
+
+
 
 .img
 	position: absolute
 	width: 20%
 	height: 370px
 	border-radius: 30px
-	@media screen and ( max-width: 991px )
-		width: 11%
-		height: 279px	
+	/* 2xl */
+	@media screen and ( max-width: 1536px )
+		background-color: black
+	/* xl */
+	@media screen and ( max-width: 1280px )
+		background-color: green
+	/* lg */
+	@media screen and ( max-width: 1024px )
+		background-color: yellow
+	/* md */
+	@media screen and ( max-width: 768px )
+		background-color: orange
+	/* sm */
+	@media screen and ( max-width: 640px )
+		background-color: white
+	/* xs */
+	@media screen and ( max-width: 475px )
+		background-color: red 
 
-.background_image
-	width: 100%
-	height: 325px
-	border-radius: 24px
-	object-fit: cover
-	@media screen and ( max-width: 991px )
-		height: 208px
-	@media screen and ( max-width: 767px )
-		height: 237px
 
-.column
-	float: left
-	width: 29%
-	@media screen and ( max-width: 1300px )
-		width: 32%
-	@media screen and ( max-width: 767px )
-		width: 97%
-		margin: 15px
 
-.card_content
-	width: 50%
-	p
-		width: 100%
-		font-size: 15px
-		margin-left: 5px
-		@media screen and ( max-width: 991px )
-			font-size: 10px
-		@media screen and ( max-width: 767px )
-			font-size: 11px
-			margin-left: 5px
 
-.card_image
-	width: 50%
 
-.card
-	padding: 8px
-	height: 216px
-	width: 39%
-	background-color: white
-	border-radius: 10px
-	display: flex
-	justify-content: space-between
-	align-items: flex-start
-	@media screen and ( max-width: 1350px )
-		width: 56%
-		height: 213px
-	@media screen and ( max-width: 1300px )
-		width: 46%
-		height: 213px
-	@media screen and ( max-width: 1200px )
-		width: 54%
-	@media screen and ( max-width: 991px )
-		width: 50%
-		height: 139px
-		margin-left: 10px  !important
-	@media screen and ( max-width: 767px )
-		width: 24%
-		height: 149px
-		margin-left: 10px  !important
 
-.card_header
-	width: 40%
-	height: 42px
-	display: flex
-	justify-content: space-evenly
-	align-items: center
-	background-color: white
-	padding: 2px
-	border-radius: 10px 
-	margin-bottom: 20px 
-	@media screen and ( max-width: 1350px )
-		width: 56%
-	@media screen and ( max-width: 1200px )
-		width: 54%
-	@media screen and ( max-width: 991px )
-		width: 48%
-		margin-bottom: 10px !important
-		height: 35px
-	@media screen and ( max-width: 767px )
-		padding: 1px
-		width: 25%
 
-.fix
-	width: 45%
-	position: absolute
-	top: 87px
-	padding: 10px
-	@media screen and ( max-width: 991px )
-		margin-top: 20px  !important
-		top: 98px
-		width: 42%
-	@media screen and ( max-width: 767px )
-		width: 45%
-		top: 20px
-
-.image_center
-	position: absolute
-	width: 18%
-	height: 200px
-	border-radius: 10px
-	@media screen and (max-device-width: 1400px) 
-		width: 25%
-	@media screen and ( max-width: 991px )
-		height: 124px
-		width: 19%
-	@media screen and ( max-width: 767px )
-		width: 11%
-		height: 133px

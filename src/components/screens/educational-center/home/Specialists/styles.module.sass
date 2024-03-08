@@ -1,13 +1,58 @@
 .container
-    bottom: 66px
     position: relative
     background: #E3E1E1
-    @media screen and ( max-width: 991px )
-       bottom: 40px
-    @media screen and ( max-width: 767px )
-       bottom: 20px
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      height: 800px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      height: 700px
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      height: 550px
+    /* md */
+    @media screen and ( max-width: 768px )
+      height: 750px
+    /* sm */
+    @media screen and ( max-width: 640px )
+      height: 750px
+    /* xs */
+    @media screen and ( max-width: 475px )
+      height: 700px
 
-.skew 
+
+.specialists
+    height: 420px
+    position: relative
+    bottom: 142px
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      padding: 0
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      padding: 0
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      padding: 0
+      bottom: 50px
+    /* md */
+    @media screen and ( max-width: 768px )
+       padding-top: 0
+       height: 297px
+       position: relative
+       bottom: 41px
+    /* sm */
+    @media screen and ( max-width: 640px )
+       display: block
+       height: 600px
+       bottom: 40px    /* xs */
+    @media screen and ( max-width: 475px )
+       display: block
+       height: 600px
+       bottom: 40px
+
+
+.triangle
     display: block
     height: 94px
     width: 103%
@@ -22,93 +67,73 @@
       content: ''
       right: 0
       transform: skew(-40deg)
-    @media screen and (max-device-width: 1400px) 
-      height: 60px
-      width: 103%
-      position: relative
-      bottom: 58px
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      bottom: 43px
       &:after 
-        height: 110px
-        width: 40%
-        background: #E3E1E1
-        right: 0
-    @media screen and (max-device-width: 1200px) 
-      height: 94px
-      width: 103%
-      position: relative
-      bottom: 58px
+        height: 45px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      bottom: 42px
       &:after 
-        height: 110px
-        width: 36%
-        background: #E3E1E1
-        right: 0
-    @media screen and ( max-width: 991px )
-      height: 6px
-      width: 103%
-      position: relative
-      bottom: 40px
+        height: 45px
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      bottom: 41px
       &:after 
-        height: 44px
-        width: 36%
-        background: #E3E1E1
-        right: 0
-    @media screen and ( max-width: 767px )
-      height: 62px
-      background: #E3E1E1
-      width: 120%
+        height: 45px
+    /* md */
+    @media screen and ( max-width: 768px )
+      bottom: 35px
       &:after 
-        height: 64px
-        width: 105%
-        background: #E3E1E1
+        height: 37px
+    /* sm */
+    @media screen and ( max-width: 640px )
+      display: none
+
 
 .title
+    font-family: sans-serif
     position: absolute
     margin: 0 auto
-    font-size: 35px
+    width: 100%
+    color: #313131
+    top: -55px
+    left: 68%
+    font-size: 48px
     padding-right: var(--container-gap)
     padding-left: var(--container-gap)
-    top: 10px
-    width: 85%
-    text-align: end
-    z-index: 10
-    font-weight: bold
-    @media screen and (max-device-width: 1600px) 
-       width: 87%
-    @media screen and (max-device-width: 1400px) 
-       top: 10px
-       font-size: 23px
-    @media screen and (max-device-width: 1200px) 
-       top: 17px
-       font-size: 23px
-       width: 92%
-       z-index: 1
-    @media screen and ( max-width: 991px )
-       width: 90%
-       top: 10px
-       font-size: 16px
-       right: 74px
-       z-index: 1
-    @media screen and ( max-width: 767px )
-       width: 88%
-       top: 10px
-       font-size: 27px
-       text-align: center
-       z-index: 1
-
-.specialists
-   height: 420px
-   position: relative
-   bottom: 142px
-   @media screen and (max-device-width: 1600px) 
-       padding: 0
-   @media screen and (max-device-width: 1200px) 
-       padding: 0
-   @media screen and ( max-width: 991px )
-       padding-top: 0
-       height: 297px
-       position: relative
-       bottom: 41px
-   @media screen and ( max-width: 767px )
-       display: block
-       height: 600px
-       bottom: 40px
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+      font-size: 33px
+      top: -40px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      font-size: 30px
+      left: 67%
+      top: -40px
+    /* lg */
+    @media screen and ( max-width: 1024px )
+      font-size: 27px
+      top: -37px
+    /* md */
+    @media screen and ( max-width: 768px )
+      font-size: 24px
+      top: -30px
+      left: 65%
+    /* sm */
+    @media screen and ( max-width: 640px )
+      top: 15px
+      text-align: center
+      width: 100%
+      position: relative
+      margin-bottom: 62px
+      left: 0
+    /* xs */
+    @media screen and ( max-width: 475px )
+      top: 15px
+      text-align: center
+      width: 100%
+      position: relative
+      margin-bottom: 20px
+      left: 0

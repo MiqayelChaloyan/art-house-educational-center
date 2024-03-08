@@ -9,19 +9,20 @@ import Footer from './Footer';
 import CoursesModal from './Modal/courses';
 import RightMenu from './RightMenu';
 import BottomMenu from './BottomMenu';
+
 import { getCourses } from '../../../../../sanity/services/educational-center-service/courses';
 import { EDUCATIONAL_CENTER_COURSES } from '../../../../../sanity/sanity-queries/educational-center';
 
-// import { getCourses } from '../../../sanity/services/courses.service';
-// import { Courses } from '../../../sanity/sanity-queries/courses';
 // import ModalLoading from './LoadingModal';
 
-interface LayoutProps {
+interface Props {
 	children: React.ReactNode
 	headerPosition?: 'fixed' | 'sticky'
 };
 
-const EducationalCenterLayout: React.FC<LayoutProps> = ({ children, headerPosition }) => {
+const color = 'var(--color-black)';
+
+const EducationalCenterLayout: React.FC<Props> = ({ children, headerPosition }) => {
 	const [courses, setCourses] = useState<EDUCATIONAL_CENTER_COURSES[]>([]);
 	const { i18n } = useTranslation();
 
@@ -36,7 +37,7 @@ const EducationalCenterLayout: React.FC<LayoutProps> = ({ children, headerPositi
 
 	return (
 		<Meta>
-			<div className="wrapper">
+			<div className="wrapper" style={{ backgroundColor: color }}>
 				<RightMenu />
 				<BottomMenu />
 				<div className="wrapper-content">
