@@ -1,4 +1,4 @@
-import { memo, FC } from 'react';
+import { memo, FC} from 'react';
 
 import { useTranslation } from 'react-i18next';
 
@@ -9,7 +9,7 @@ import Partner from '@/components/ui/parnter';
 
 import useWindowSize from '@/hooks/useWindowSize';
 
-import { inter } from '@/constants/font';
+import { ArianAMU } from '@/constants/font';
 
 import { ART_HOUSE_HOME } from '../../../../../../sanity/sanity-queries/art-house';
 
@@ -24,19 +24,21 @@ type Props = {
     data: ART_HOUSE_HOME[]
 };
 
+
 const Partners: FC<Props> = ({ data }) => {
     const { t } = useTranslation();
     const size = useWindowSize();
 
     const items = data.map((item: any) =>
         <SwiperSlide key={item._key}>
-            <Partner item={item} />
-        </SwiperSlide>
+        <Partner key={item._key} item={item} />
+         </SwiperSlide>
     );
+
 
     return (
         <div id="co-workers" className={styles.container}>
-            <h2 className={`${styles.title} ${inter.className}`}>
+            <h2 className={`${styles.title} ${ArianAMU.className}`}>
                 {t('section-titles.partners')}
             </h2>
             <div className={styles.desktop}>
@@ -53,8 +55,8 @@ const Partners: FC<Props> = ({ data }) => {
                     {items}
                 </Swiper>
             </div>
-            <div className={styles.mobile}>
-                <Swiper
+            <div className={styles.mobile}> 
+            <Swiper
                     effect={'coverflow'}
                     grabCursor={false}
                     centeredSlides={true}

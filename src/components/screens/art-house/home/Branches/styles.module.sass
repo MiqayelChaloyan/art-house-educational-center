@@ -1,5 +1,9 @@
+$assetPath: "../../../../../../public/assets/images/art-house/background.png"
+
+
+
 .container
-    background-image: url('../../../../../../public/assets/images/art-house/background.png') 
+    background-image: url($assetPath) 
     background-repeat: round
     background-size: contain
     background-position: inherit  
@@ -16,7 +20,7 @@
         margin: 0 auto
         height: 800px
         position: relative
-        top: -90px
+        top: 0
         z-index: 0    
     /* xl */
     @media screen and ( max-width: 1280px )
@@ -26,7 +30,7 @@
         margin: 0 auto
         height: 600px
         position: relative
-        top: -90px
+        top: 0
         z-index: 0    
     /* lg */
     @media screen and ( max-width: 1024px )
@@ -34,9 +38,9 @@
         background-size: cover
         background-position: center
         margin: 0 auto
-        height: 580px
+        height: 500px
         position: relative
-        top: -43px
+        top: 2px
         z-index: 0    
     /* md */
     @media screen and ( max-width: 768px )
