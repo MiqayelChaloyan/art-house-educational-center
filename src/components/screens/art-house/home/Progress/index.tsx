@@ -4,7 +4,7 @@ import Container from '@/components/components/container';
 
 import ProgressItem from '@/components/ui/progress';
 
-import { inter } from '@/constants/font';
+import { ArianAMU } from '@/constants/font';
 
 import { ART_HOUSE_HOME } from '../../../../../../sanity/sanity-queries/art-house';
 
@@ -21,7 +21,7 @@ const Progress: FC<Props> = ({ data }) => {
     const items = uploadProgress.map((item: any) => (
         <div key={item.slug} className={styles.column}>
             <ProgressItem value={0} quantity={item.quantity} />
-            <p className={`${styles.title} ${inter.className}`}>{item.title}</p>
+            <p className={`${styles.title} ${ArianAMU.className}`}>{item.title}</p>
         </div>
     ));
 

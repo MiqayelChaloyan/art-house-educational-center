@@ -28,8 +28,8 @@ const EducationalCenterHome: FC<Props> = ({ data, isError }) => {
     return (
         <Layout headerPosition='fixed'>
             <Head>
-                <title>Educational Center</title>
-                <meta name='description' content='Educational Center' />
+                <title>Art House Holding</title>
+				<meta name='description' content='Art House Holding' />
             </Head>
             <Header data={data} />
 

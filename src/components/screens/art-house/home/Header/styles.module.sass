@@ -1,32 +1,37 @@
-.main
-    background-image: url('../../../../../../public/assets/images/art-house/wall.png') 
+$assetPath: "../../../../../../public/assets/images/art-house/wall.png"
+$assetPathWatch: "../../../../../../public/assets/images/art-house/watch.png"
+$assetPathLogo: "../../../../../../public/assets/images/art-house/artHouseLogo.png"
+$assetPathFlashLight: "../../../../../../public/assets/images/art-house/flashLight.png"
+
+
+
+.header
+    background-image: url($assetPath) 
     background-repeat: repeat
-    background-size: 50%
+    background-size: inherit
     background-position: center  
-    height: 575px
-    padding: 16px
-    margin-top: 30px
+    height: 647px
+    padding-top: 48px
     /* 2xl */
     @media screen and ( max-width: 1536px )
-        margin: 111px auto
-        height: 586px
-        padding: 0 100px
-        margin-bottom: 0  
+        height: 647px
+        padding-top: 108px
     /* xl */
     @media screen and ( max-width: 1280px )
-        margin: 75px auto
-        height: 389px
-        padding: 35px 0 0 0
+        height: 534px
+        padding-top: 108px
     /* lg */
     @media screen and ( max-width: 1024px )
-        padding: 5px 0 0 0
+        padding-top: 79px
+        height: 420px
     /* md */
     @media screen and ( max-width: 768px )
-        background-size: auto
-        background-position: center
-        margin: 0
-        height: max-content
-        padding: 0         
+        height: 550px
+        padding-top: 101px      
+    /* xs */
+    @media screen and ( max-width: 475px )
+        height: 600px 
+        padding-top: 135px
 
 
 .row
@@ -34,7 +39,7 @@
     flex-wrap: wrap
     justify-content: space-between
     align-items: center
-    padding: 64px 0 0 0
+    padding: 60px 0 0 0
     /* 2xl */
     @media screen and ( max-width: 1536px )
         padding: 0 0 0 0
@@ -45,13 +50,16 @@
     @media screen and ( max-width: 768px )
         display: grid
         justify-content: center
-        margin-top: 101px
+        margin-top: 0
 
 
 .watch
-    width: 327px
-    height: 327px
-    margin-top: 0
+    background-image: url($assetPathWatch) 
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center  
+    width: 350px
+    height: 350px
     /* 2xl */
     @media screen and ( max-width: 1536px )
         width: 320px
@@ -80,12 +88,16 @@
         height: 289px
         margin: 0 auto
         position: relative
-        right: 5px
+        right: 10px
 
 
 .art_house_logo
-    width: 436px
-    height: 119px
+    background-image: url($assetPathLogo) 
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center  
+    width: 350px
+    height: 120px
     /* 2xl */
     @media screen and ( max-width: 1536px )
         width: 308px
@@ -116,19 +128,23 @@
 
 
 .flash_light
-    width: 92px
-    height: 492px
+    background-image: url($assetPathFlashLight) 
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: right  
+    width: 290px
+    height: 470px
     /* 2xl */
     @media screen and ( max-width: 1536px )
-        width: 94px
+        width: 350px
         height: 500px
     /* xl */
     @media screen and ( max-width: 1280px )
-        width: 56px
+        width: 280px
         height: 309px
     /* lg */
     @media screen and ( max-width: 1024px )
-        width: 56px
+        width: 200px
         height: 309px
     /* md */
     @media screen and ( max-width: 768px )
@@ -136,7 +152,7 @@
 
 
 .text
-    font-size: 36px
+    font-size: 32px
     color: #B21B1B
     font-weight: 700
     line-height: 79px
