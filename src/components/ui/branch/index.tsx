@@ -8,6 +8,8 @@ import { ArianAMU, inter } from '@/constants/font';
 
 import styles from './styles.module.sass';
 
+
+
 interface BranchProps {
     item: {
         company_name: string;
@@ -17,6 +19,8 @@ interface BranchProps {
         website_logo_back: string;
     };
 };
+
+
 
 const Branch: React.FC<BranchProps> = ({ item }) => {
     const { company_name, words, web_site_url, website_logo_front, website_logo_back } = item;

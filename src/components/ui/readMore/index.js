@@ -1,4 +1,5 @@
 import { memo } from 'react';
+
 import styles from './styles.module.sass';
 
 const ReadMore = ({ children, isReadMore }) => {
