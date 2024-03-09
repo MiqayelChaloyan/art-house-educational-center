@@ -1,5 +1,6 @@
 import styles from './style.module.sass';
 
+
 export const NextArrow = (props: any) => {
     const { className, style, onClick } = props;
     return (
@@ -13,7 +14,7 @@ export const NextArrow = (props: any) => {
 
 export const PrevArrow = (props: any) => {
     const { className, style, onClick } = props;
-    
+
     return (
         <div
             className={`${className} ${styles.arrow_prev}`}

@@ -1,79 +1,117 @@
-import { memo, FC} from 'react';
-
+import { memo, FC, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, FreeMode, Pagination } from 'swiper/modules';
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 import Partner from '@/components/ui/parnter';
-
-import useWindowSize from '@/hooks/useWindowSize';
 
 import { ArianAMU } from '@/constants/font';
 
 import { ART_HOUSE_HOME } from '../../../../../../sanity/sanity-queries/art-house';
 
+// Swiper 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
+
 // Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import "swiper/css/autoplay";
+
+// slick-carousel 
+import Slider from 'react-slick';
+
+// slick-carousel styles
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import styles from './styles.module.sass';
+
+
 
 type Props = {
     data: ART_HOUSE_HOME[]
 };
 
 
-const Partners: FC<Props> = ({ data }) => {
-    const { t } = useTranslation();
-    const size = useWindowSize();
+const SampleNextArrow = ({ onClick }: any) => (
+    <div className={`${styles.arrow} ${styles.arrow_right}`} onClick={onClick}>
+        <SlArrowRight />
+    </div>
+);
 
-    const items = data.map((item: any) =>
-        <SwiperSlide key={item._key}>
-        <Partner key={item._key} item={item} />
-         </SwiperSlide>
-    );
+const SamplePrevArrow = ({ onClick }: any) => (
+    <div className={`${styles.arrow} ${styles.arrow_left}`} onClick={onClick}>
+        <SlArrowLeft />
+    </div>
+);
+
+
+
+const Partners: FC<Props> = ({ data }) => {
+    const [slideIndex, setSlideIndex] = useState(0);
+    const { t } = useTranslation();
+
+    const params = {
+        slidesPerView: window.innerWidth <= 1280 ? 5 : 9,
+        spaceBetween: 90,
+        freeMode: true,
+        pagination: {
+            clickable: true,
+        },
+        modules: [FreeMode, Pagination, Autoplay],
+        className: styles.swiper,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+    };
+
+    const settings = {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        dots: false,
+        beforeChange: (current: any, next: any) => setSlideIndex(next),
+        centerMode: true,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        cssEase: 'linear',
+    }
 
 
     return (
-        <div id="co-workers" className={styles.container}>
+        <div id='co-workers' className={styles.container}>
             <h2 className={`${styles.title} ${ArianAMU.className}`}>
                 {t('section-titles.partners')}
             </h2>
             <div className={styles.desktop}>
-                <Swiper
-                    slidesPerView={size.width <= 1280 ? 6 : 9}
-                    spaceBetween={90}
-                    freeMode={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[FreeMode, Pagination]}
-                    className={styles.swiper}
-                >
-                    {items}
+                <Swiper {...params}>
+                    {
+                        data.map((item: any) =>
+                            <SwiperSlide key={item._key}>
+                                <Partner item={item} />
+                            </SwiperSlide>
+                        )
+                    }
                 </Swiper>
             </div>
-            <div className={styles.mobile}> 
-            <Swiper
-                    effect={'coverflow'}
-                    grabCursor={false}
-                    centeredSlides={true}
-                    slidesPerView={'auto'}
-                    coverflowEffect={{
-                        rotate: 50,
-                        stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: false,
-                    }}
-                    pagination={true}
-                    modules={[EffectCoverflow, Pagination]}
-                    className={styles.mySwiper}
-                >
-                    {items}
-                </Swiper>
+            <div className={styles.mobile}>
+                <Slider {...settings}>
+                    {
+                        data.map((item, index) => (
+                            <div
+                                key={index}
+                                className={index === slideIndex ? `${styles.slide} ${styles.slide_active}` : styles.slide}
+                            >
+                                <Partner item={item} />
+                            </div>
+                        ))
+                    }
+                </Slider>
             </div>
         </div>
     );

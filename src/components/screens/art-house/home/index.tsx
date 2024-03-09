@@ -13,10 +13,14 @@ import PageNotFoundError from "../../404";
 
 import { ART_HOUSE_HOME } from "../../../../../sanity/sanity-queries/art-house";
 
+
+
 type HomeProps = {
 	data: ART_HOUSE_HOME
 	isError: boolean
 };
+
+
 
 const Home: FC<HomeProps> = ({ data, isError }) => {
 	const { our_websites, progress_section, co_workers } = data;

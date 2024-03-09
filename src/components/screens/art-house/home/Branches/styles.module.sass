@@ -1,7 +1,6 @@
 $assetPath: "../../../../../../public/assets/images/art-house/background.png"
 
 
-
 .container
     background-image: url($assetPath) 
     background-repeat: round
@@ -24,11 +23,11 @@ $assetPath: "../../../../../../public/assets/images/art-house/background.png"
         z-index: 0    
     /* xl */
     @media screen and ( max-width: 1280px )
-        background-repeat: round
+        background-repeat: no-repeat
         background-size: contain
         background-position: inherit  
         margin: 0 auto
-        height: 600px
+        height: 760px
         position: relative
         top: 0
         z-index: 0    
@@ -37,6 +36,8 @@ $assetPath: "../../../../../../public/assets/images/art-house/background.png"
         background-repeat: no-repeat
         background-size: cover
         background-position: center
+        background-color: rgb(95, 95, 95)
+        background-image: none  
         margin: 0 auto
         height: 500px
         position: relative
@@ -75,3 +76,27 @@ $assetPath: "../../../../../../public/assets/images/art-house/background.png"
     margin: 29px auto
     @media screen and ( max-width: 768px )
        display: block
+
+
+.swiper
+    width: 100%
+    padding-top: 50px
+    padding-bottom: 50px
+
+
+.swiper-slide
+    background-position: center
+    background-size: cover
+    width: 300px
+    height: 0 !important
+
+
+.swiper-pagination
+    bottom: 44px !important
+
+
+.mySwiper
+    --swiper-pagination-color: var(--color-red)
+    --swiper-pagination-bullet-inactive-color: var(--color-primary-gray)
+    --swiper-pagination-bullet-inactive-opacity: 1
+    --swiper-pagination-bullet-size: 10px
