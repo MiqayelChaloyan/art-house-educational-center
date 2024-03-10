@@ -9,6 +9,7 @@ import MainScreen from './MainScreen';
 
 import { EDUCATIONAL_CENTER_CO_WORKERS } from '../../../../../sanity/sanity-queries/educational-center';
 
+import styles from './styles.module.sass';
 
 type CoWorkersProps = {
 	data: EDUCATIONAL_CENTER_CO_WORKERS[]
@@ -24,7 +25,8 @@ const CoWorkers: FC<CoWorkersProps> = ({ data, isError }) => {
 
 	return (
 		<Layout headerPosition='fixed'>
-			<MainScreen data={data} isError={isError}/>
+			<div className={styles.column} />
+			<MainScreen data={data} isError={isError} />
 		</Layout>
 	);
 };
