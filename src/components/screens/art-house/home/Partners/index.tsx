@@ -4,8 +4,6 @@ import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 import Partner from '@/components/ui/parnter';
 
-import { ArianAMU } from '@/constants/font';
-
 import { ART_HOUSE_HOME } from '../../../../../../sanity/sanity-queries/art-house';
 
 // Swiper 
@@ -24,6 +22,8 @@ import Slider from 'react-slick';
 // slick-carousel styles
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+import { ArianAMU } from '@/constants/font';
 
 import styles from './styles.module.sass';
 
@@ -62,7 +62,7 @@ const Partners: FC<Props> = ({ data }) => {
         modules: [FreeMode, Pagination, Autoplay],
         className: styles.swiper,
         autoplay: {
-            delay: 2500,
+            delay: 3000,
             disableOnInteraction: false
         },
     };
@@ -73,13 +73,13 @@ const Partners: FC<Props> = ({ data }) => {
         infinite: true,
         speed: 500,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2000,
         dots: false,
         beforeChange: (current: any, next: any) => setSlideIndex(next),
         centerMode: true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
-        cssEase: 'linear',
+        cssEase: 'ease-out',
     }
 
 

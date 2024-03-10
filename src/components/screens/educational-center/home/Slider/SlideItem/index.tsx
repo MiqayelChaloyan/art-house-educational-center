@@ -3,7 +3,10 @@ import { useTranslation } from 'react-i18next';
 
 import Button from '@/components/ui/Button';
 
+import { ArianAMU } from '@/constants/font';
+
 import styles from './styles.module.sass';
+
 
 type Props = {
     url: string
@@ -21,10 +24,10 @@ const SlideItem: React.FC<Props> = ({ url, alt, subtitle, content, scrollToEleme
         <div className={styles.emplay_slide} style={{backgroundImage: `url(${url})`}}>
             <div className={styles.box}>
                 <div className={styles.contact}>
-                    <h1 className={styles.title}>{subtitle}</h1>
-                    <p>{description}</p>
+                    <h1 className={`${styles.title} ${ArianAMU.className}`}>{subtitle}</h1>
+                    <p className={ArianAMU.className}>{description}</p>
                     <Button
-                        className={styles.contact_btn}
+                        className={`${styles.contact_btn} ${ArianAMU.className}`}
                         text={t('button.contact-us')}
                         onClick={scrollToElement}
                     />

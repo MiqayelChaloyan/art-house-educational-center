@@ -14,6 +14,9 @@ const Layout: React.FC<Props> = ({ children, headerPosition }) => {
 
   let LayoutComponent;
 
+  console.log(pathname);
+  
+
   switch (pathname) {
     case '/':
       LayoutComponent = dynamic(() => import('./layouts/art-house/layout'));
@@ -26,8 +29,8 @@ const Layout: React.FC<Props> = ({ children, headerPosition }) => {
     case '/language':
       console.log('11111111111111111111');
       break;
-    default:
-      LayoutComponent = dynamic(() => import('./layouts/art-house/layout'));
+    // default:
+    //   LayoutComponent = dynamic(() => import('./layouts/art-house/layout'));
   }
 
   return (

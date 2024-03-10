@@ -14,6 +14,8 @@ import cn from 'classnames';
 import Logo from '@/components/icons/educational-center/Logo';
 import Button from '@/components/ui/Button';
 
+import { ArianAMU } from '@/constants/font';
+
 import styles from './styles.module.sass';
 
 const localeStrings: {
@@ -85,17 +87,17 @@ const Header = ({ typePosition }: IHeaderProps) => {
                     `${isSticky && isOpenMenu ? styles.contentSticky : ''}`,
                 )}>
                     <div className={styles.nav}>
-                        <Link href='/educational-center' aria-label='about' className={`${styles.link} ${pathname === '/educational-center' ? styles.linkActive : ''}`}>{t('navigation.about')}</Link>
+                        <Link href='/educational-center' aria-label='about' className={`${styles.link} ${pathname === '/educational-center' ? styles.linkActive : ''} ${ArianAMU.className}`}>{t('navigation.about')}</Link>
                         <Button
                             text={t('navigation.courses')}
                             onClick={() => {
                                 setIsOpenMenu(false);
                                 setTimeout(() => dispatch(openModal()), 500);
                             }}
-                            className={styles.btn}
+                            className={`${styles.btn} ${ArianAMU.className}`}
                         />
-                        <Link href='/educational-center/co-workers' aria-label='co-workers' className={`${styles.link} ${pathname === '/educational-center/co-workers' ? styles.linkActive : ''}`}>{t('navigation.co-workers')}</Link>
-                        <Link href='/educational-center/price-list' aria-label='price-list' className={`${styles.link} ${pathname === '/educational-center/price-list' ? styles.linkActive : ''}`}>{t('navigation.price-list')}</Link>
+                        <Link href='/educational-center/co-workers' aria-label='co-workers' className={`${styles.link} ${pathname === '/educational-center/co-workers' ? styles.linkActive : ''} ${ArianAMU.className}`}>{t('navigation.co-workers')}</Link>
+                        <Link href='/educational-center/price-list' aria-label='price-list' className={`${styles.link} ${pathname === '/educational-center/price-list' ? styles.linkActive : ''} ${ArianAMU.className}`}>{t('navigation.price-list')}</Link>
                     </div>
 
                     <div>
@@ -113,7 +115,7 @@ const Header = ({ typePosition }: IHeaderProps) => {
                                         // setTimeout(() => dispatch(openModalLoading()), 2);
                                     }}
                                     style={{ color: activeLocale === locale ? 'red' : 'white' }}
-                                    className={styles.language}
+                                    className={`${styles.language} ${ArianAMU.className}`}
                                 >
                                     {localeStrings[locale]}
                                 </Link>

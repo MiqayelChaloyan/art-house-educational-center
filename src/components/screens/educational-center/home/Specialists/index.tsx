@@ -1,11 +1,8 @@
 import { FC, memo } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
 import { NextArrow, PrevArrow } from '@/components/ui/react-slick-arrow';
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 import Container from '@/components/components/container';
 
@@ -13,12 +10,35 @@ import Item from './Item';
 
 import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
 
+// slick-carousel 
+import Slider from 'react-slick';
+
+// slick-carousel styles
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import { ArianAMU } from '@/constants/font';
+
 import styles from './styles.module.sass';
 
 
 type SectionCoursesProps = {
     data: EDUCATIONAL_CENTER_DEFAULT[]
 };
+
+
+
+const SampleNextArrow = ({ onClick }: any) => (
+    <div className={`${styles.arrow} ${styles.arrow_right}`} onClick={onClick}>
+        <SlArrowRight />
+    </div>
+);
+
+const SamplePrevArrow = ({ onClick }: any) => (
+    <div className={`${styles.arrow} ${styles.arrow_left}`} onClick={onClick}>
+        <SlArrowLeft />
+    </div>
+);
 
 
 const Specialists: FC<SectionCoursesProps> = ({ data }) => {
@@ -29,27 +49,23 @@ const Specialists: FC<SectionCoursesProps> = ({ data }) => {
     ));
 
     const settings = {
-        speed: 500,
-        autoplay: false,
-        autoplaySpeed: 2500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
-        dots: false,
         infinite: true,
-        centerMode: true,
-        centerPadding: '0',
-        focusOnSelect: true,
-        initialSlide: 0,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />
+        speed: 600,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: false,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        cssEase: 'ease-out',
     };
 
     return (
         <div id='specialists' className={styles.container}>
             <div className={styles.triangle} />
             <Container>
-                <h1 className={styles.title}>{t('pages.specialists')}</h1>
+                <h1 className={`${styles.title} ${ArianAMU.className}`}>{t('pages.specialists')}</h1>
                 <div className={styles.specialists}>
                     <Slider {...settings}>
                         {slidesItems}

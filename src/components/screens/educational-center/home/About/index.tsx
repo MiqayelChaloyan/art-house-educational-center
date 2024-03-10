@@ -9,12 +9,15 @@ import Container from '@/components/components/container';
 import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
 
 import { ImagePaths } from '@/constants';
+import { ArianAMU } from '@/constants/font';
 
 import styles from './styles.module.sass';
+
 
 type Props = {
     data: EDUCATIONAL_CENTER_DEFAULT[]
 };
+
 
 const About: FC<Props> = ({ data }) => {
     const { t } = useTranslation();
@@ -27,10 +30,10 @@ const About: FC<Props> = ({ data }) => {
         <div id='about-us' className={styles.container}>
             <div className={styles.triangle} />
             <Container>
-                <h1 className={styles.title}>{t('pages.about')}</h1>
+                <h1 className={`${styles.title} ${ArianAMU.className}`}>{t('pages.about')}</h1>
                 <div className={styles.about_us}>
                     <div className={styles.box}>
-                        <p>{content}</p>
+                        <p className={ArianAMU.className}>{content}</p>
                     </div>
                     <div className={styles.box}>
                         <Image

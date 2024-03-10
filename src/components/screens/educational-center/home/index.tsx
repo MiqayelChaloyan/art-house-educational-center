@@ -32,12 +32,10 @@ const EducationalCenterHome: FC<Props> = ({ data, isError }) => {
 				<meta name='description' content='Art House Holding' />
             </Head>
             <Header data={data} />
-
             <About data={data} />
             <VideoPlayer data={data} />
             <CookingCourses data={data} />  
             <Progress data={data} />
-            
             <Specialists data={data} />
             <OurRating data={data} />
         </Layout>

@@ -1,19 +1,25 @@
 import { FC, memo, useEffect, useState } from 'react';
+
 import ReactPlayer from 'react-player';
 
 import Image from 'next/image';
 
 import Play from '@/components/icons/educational-center/Play';
+import Container from '@/components/components/container';
 
 import { urlFor } from '../../../../../../sanity/imageUrlBuilder';
 
-import styles from './styles.module.sass';
-import Container from '@/components/components/container';
 import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
+
+import { ArianAMU } from '@/constants/font';
+
+import styles from './styles.module.sass';
+
 
 type Props = {
     data: EDUCATIONAL_CENTER_DEFAULT[]
 };
+
 
 const VideoPlayer: FC<Props> = ({ data }) => {
     const [video, setVideo] = useState<string | any>(null);
@@ -67,7 +73,7 @@ const VideoPlayer: FC<Props> = ({ data }) => {
         <div id='video-player' className={styles.container}>
             <div className={styles.triangle} />
             <Container>
-                <h1 className={styles.title}>{data[0].cooking_courses[0].video_section_title}</h1>
+                <h1 className={`${styles.title} ${ArianAMU.className}`}>{data[0].cooking_courses[0].video_section_title}</h1>
                 <div className={styles.video_player}>
                     <div className={styles.player}>
                         {video}
