@@ -7,6 +7,8 @@ import Courses from './Courses';
 
 import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
 
+import { ArianAMU } from '@/constants/font';
+
 import styles from './styles.module.sass';
 
 
@@ -27,7 +29,7 @@ const CookingCourses: FC<Props> = ({ data }) => {
         <div id='cooking-courses' className={styles.container}>
             <div className={styles.triangle} />
             <Container>
-                <h1 className={styles.title}>{t('pages.news')}</h1>
+                <h1 className={`${styles.title} ${ArianAMU.className}`}>{t('pages.news')}</h1>
                 <div className={styles.cooking_courses}>
                     <Courses data={newsItems} />
                 </div>

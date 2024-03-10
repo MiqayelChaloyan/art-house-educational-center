@@ -2,8 +2,11 @@ import RatingCard from '../RatingCard';
 
 import { urlFor } from '../../../../../../../sanity/imageUrlBuilder';
 
-const MobileCards = (data: any) => {
-    const feedbacks = data.map((card: any): JSX.Element => {
+import styles from './styles.module.sass';
+
+
+const MobileCards = (data: any, slideIndex: any) => {
+    const feedbacks = data.map((card: any, index: string): JSX.Element => {
 
         const urlForImageBackground = urlFor(card.our_rating_section_image)
             .auto('format')
@@ -29,7 +32,11 @@ const MobileCards = (data: any) => {
             rating: card.rating + 1,
         };
 
-        return <RatingCard key={card.slug} options={options} />;
+        return (
+            <div key={card.slug}  className={index === slideIndex ? `${styles.slide} ${styles.slide_active}` : styles.slide}>
+                <RatingCard options={options} />
+            </div>
+        );
     });
 
     return feedbacks;

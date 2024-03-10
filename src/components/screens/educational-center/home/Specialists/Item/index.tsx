@@ -7,9 +7,11 @@ import Image from 'next/image';
 import Button from '@/components/ui/Button';
 
 import { urlFor } from '../../../../../../../sanity/imageUrlBuilder';
+import { getCourseById } from '../../../../../../../sanity/services/educational-center-service/courses';
+
+import { ArianAMU } from '@/constants/font';
 
 import styles from './style.module.sass';
-import { getCourseById } from '../../../../../../../sanity/services/educational-center-service/courses';
 
 const Images = ({ images }: any) => {
     const firstDivImages = images.slice(0, Math.ceil(images.length / 2));
@@ -17,7 +19,7 @@ const Images = ({ images }: any) => {
 
     return (
         <div>
-            <div className={styles.images_block}>
+            <div className={styles.gallery_row}>
                 {firstDivImages.map((image: any) => {
                     const urlForImageOne = urlFor(image)
                         .auto('format')
@@ -30,7 +32,7 @@ const Images = ({ images }: any) => {
                             src={urlForImageOne}
                             alt={image.alt}
                             priority
-                            className={styles.img_small}
+                            className={styles.image_gallery}
                             width={0}
                             height={0}
                             sizes="100vw"
@@ -39,7 +41,7 @@ const Images = ({ images }: any) => {
                     );
                 })}
             </div>
-            <div className={styles.images_block}>
+            <div className={styles.gallery_row}>
                 {secondDivImages.map((image: any) => {
                     const urlForImageOne = urlFor(image)
                         .auto('format')
@@ -52,7 +54,7 @@ const Images = ({ images }: any) => {
                             src={urlForImageOne}
                             alt={image.alt}
                             priority
-                            className={styles.img_small}
+                            className={styles.image_gallery}
                             width={0}
                             height={0}
                             sizes="100vw"
@@ -64,6 +66,7 @@ const Images = ({ images }: any) => {
         </div>
     );
 };
+
 
 const Item = ({ item }: any) => {
     const router = useRouter();
@@ -80,8 +83,8 @@ const Item = ({ item }: any) => {
     };
 
     return (
-        <div key={item._key} className={styles.item}>
-            <div className={styles.box_img}>
+        <div key={item._key} className={styles.slide}>
+            <div className={styles.right}>
                 <Image
                     key={item._key}
                     src={urlForImage}
@@ -94,17 +97,17 @@ const Item = ({ item }: any) => {
                     style={{ objectFit: 'contain' }}
                 />
             </div>
-            <div className={styles.box}>
+            <div className={styles.left}>
                 <div className={styles.header}>
                     <div className={styles.point} />
-                    <h2 className={styles.subtitle}>{item.title}</h2>
+                    <h2 className={`${styles.teacher} ${ArianAMU.className}`}>{item.title}</h2>
                 </div>
                 <Button
-                    className={styles.contact_btn}
+                    className={`${styles.button} ${ArianAMU.className}`}
                     text={item.course_name}
                     onClick={goCoursePage}
                 />
-                <div className={styles.box_images}>
+                <div className={styles.gallery}>
                     {Images({ images: item.specialists_section_images })}
                 </div>
             </div>

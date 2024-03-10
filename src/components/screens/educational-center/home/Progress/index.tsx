@@ -6,6 +6,8 @@ import ProgressItem from '@/components/ui/progress';
 
 import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
 
+import { ArianAMU } from '@/constants/font';
+
 import styles from './styles.module.sass';
 
 
@@ -21,7 +23,7 @@ const Progress: FC<Props> = ({ data }) => {
         return (
             <div key={item.slug} className={styles.column}>
                 <ProgressItem value={0} quantity={item.quantity} />
-                <p className={styles.title}>{item.title}</p>
+                <p className={`${styles.title} ${ArianAMU.className}`}>{item.title}</p>
             </div>
         );
     });

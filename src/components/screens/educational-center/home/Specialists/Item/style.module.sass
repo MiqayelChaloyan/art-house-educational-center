@@ -1,127 +1,58 @@
-.box_images
+.slide
     display: flex
-    justify-content: center
-    width: 100%
-    @media screen and ( max-width: 767px )
-       width: 100%
-
-.item
-    display: flex !important
     justify-content: space-evenly
-    align-items: center
-    @media screen and ( max-width: 991px )
-       display: flex !important
-       align-items: center
-    @media screen and ( max-width: 767px )
-       display: block !important
-
-.img 
-    display: flex 
-    margin: 0 auto 
-    height: 482px 
-    width: 420px
-    object-fit: cover
-    border-radius: 40px
+    align-items: flex-end
     /* 2xl */
     @media screen and ( max-width: 1536px )
-      height: 800px
     /* xl */
     @media screen and ( max-width: 1280px )
-      height: 700px
     /* lg */
     @media screen and ( max-width: 1024px )
-      height: 420px
     /* md */
     @media screen and ( max-width: 768px )
-      height: 324px
-      object-fit: contain !important
-      width: 50%
     /* sm */
     @media screen and ( max-width: 640px )
-      height: 324px
-      object-fit: contain !important
-      width: 50%
+       display: grid
+       justify-content: center
     /* xs */
     @media screen and ( max-width: 475px )
-      height: 324px
-      object-fit: contain !important
-      width: 50%
 
 
-.box_img
+.gallery
     display: flex
     justify-content: center
     width: 40%
-    @media screen and (max-device-width: 1200px) 
-       width: 40%
-    @media screen and (max-device-width: 1600px) 
-       width: 40%
-    @media screen and ( max-width: 991px )
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
        width: 30%
-    @media screen and ( max-width: 767px )
+       height: 189px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+       width: 30%
+       height: 168px
+    /* lg */
+    @media screen and ( max-width: 1024px )
+       width: 30%
+       height: 168px
+    /* md */
+    @media screen and ( max-width: 768px )
+       width: 30%
+       height: 168px
+    /* sm */
+    @media screen and ( max-width: 640px )
        width: 100%
-
-
-.subtitle  
-    text-align: left
-    color: black
-    font-size: 20px
-    margin-bottom: 20px
-    margin-left: 10px
-    @media screen and ( max-width: 991px )
+       height: 348px
+    /* xs */
+    @media screen and ( max-width: 475px )
        width: 100%
-       text-align: left
-       font-size: 16px
-       margin-bottom: -2px
-    @media screen and ( max-width: 767px )
-       text-align: center
-       width: 100%
-       margin-top: 24px
-       font-size: 16px
+       height: 348px
 
 
-.img_small
-    display: flex 
-    margin: 0 auto 
-    height: 130px
-    width: 130px
-    object-fit: cover
-    border-radius: 30px
-    margin: 5px
-    @media screen and (max-device-width: 1400px) 
-       height: 100px 
-       width: 100px
-    @media screen and ( max-width: 991px )
-      height: 80px
-      width: 80px
-    @media screen and ( max-width: 767px )
-      height: 78px
-      width: 78px
-      border-radius: 10px
-
-
-.box
-    justify-content: center
-    margin-top: 95px
-    @media screen and ( max-width: 991px )
-       margin: 0
-       padding-left: 10px
-
-
-.images_block
+.gallery_row
     display: flex
-    @media screen and ( max-width: 991px )
-       display: flex
-    @media screen and ( max-width: 767px )
-       display: flex
 
 
-.title_section
-    @media screen and ( max-width: 991px )
-       text-align: center
-
-
-.contact_btn
+.button
     display: flex
     align-items: center
     justify-content: center
@@ -133,7 +64,7 @@
     padding: 12px 30px
     background-color: #C62020
     font-size: 17px
-    margin-bottom: 20px
+    margin: 0 0 20px 5px
     color: white
     transition: 0.4s
     &:hover
@@ -153,22 +84,22 @@
       font-size: 16px
       padding: 8px 20px
       width: 48%
-      height: 43px
+      height: 30px
       margin: 19px 0 19px 0    
     /* lg */
     @media screen and ( max-width: 1024px )
-      font-size: 16px
+      font-size: 11px
       padding: 8px 20px
-      width: 48%
-      height: 43px
-      margin: 19px 0 19px 0
+      width: 29%
+      height: 24px
+      margin: 5px 0 5px 0
     /* md */
     @media screen and ( max-width: 768px )
-      font-size: 16px
+      font-size: 11px
       padding: 8px 20px
-      width: 27%
-      height: 43px
-      margin: 20px auto
+      width: 29%
+      height: 24px
+      margin: 5px 0 5px 0
       &:hover
          background-color: #C62020
          border: none
@@ -177,7 +108,7 @@
     @media screen and ( max-width: 640px )
       font-size: 16px
       padding: 8px 20px
-      width: 27%
+      width: 46%
       height: 43px
       margin: 20px auto
       &:hover
@@ -188,7 +119,7 @@
     @media screen and ( max-width: 475px )
       font-size: 16px
       padding: 8px 20px
-      width: 27%
+      width: 54%
       height: 43px
       margin: 20px auto
       &:hover
@@ -197,44 +128,127 @@
          color: white
 
 
-         
-
-.slider
-    @media screen and ( max-width: 991px )
-       margin-top: 126px
-    @media screen and ( max-width: 767px )
-       margin-top: 124px
-
-
-.button 
-   width: 2rem 
-   height: 2rem 
-   background-color: rgba(255, 255, 255, 0.100) 
-   cursor: pointer 
-   color: #01be96 
-   border: none 
-   position: absolute 
-   top: 45% 
-   right: -1rem 
+.header
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin: 0 5px 20px 5px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+      margin: 0 5px 10px 5px
+    /* sm */
+    @media screen and ( max-width: 640px )
+      margin: 15px auto
+      justify-content: center
 
 
 .point
-   width: 14px
-   height: 14px
-   background-color: #C62020
-   border-radius: 50px
-   @media screen and ( max-width: 991px )
-      width: 10px
-      height: 10px
-   @media screen and ( max-width: 767px )
-      width: 10px
-      height: 10px
+    width: 14px
+    height: 14px
+    background-color: #C62020
+    border-radius: 50px
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+       width: 10px
+       height: 10px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+       width: 10px
+       height: 10px
+    /* lg */
+    @media screen and ( max-width: 1024px )
+       width: 10px
+       height: 10px
+    /* md */
+    @media screen and ( max-width: 768px )
+       width: 10px
+       height: 10px
+    /* sm */
+    @media screen and ( max-width: 640px )
+       width: 10px
+       height: 10px
+    /* xs */
+    @media screen and ( max-width: 475px )
+       width: 10px
+       height: 10px
 
 
-.header
-   display: flex
-   justify-content: flex-start
-   align-items: baseline
-   @media screen and ( max-width: 767px )
-      width: 220px
-      margin: 0 auto
+.image_gallery
+    height: 130px
+    width: 130px
+    object-fit: cover
+    border-radius: 30px
+    margin: 5px 5px 0 5px
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+       width: 90px
+       height: 90px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+       width: 79px
+       height: 79px
+       border-radius: 20px
+    /* md */
+    @media screen and ( max-width: 768px )
+       width: 70px
+       height: 70px
+       border-radius: 10px
+    /* sm */
+    @media screen and ( max-width: 640px )
+       border-radius: 10px
+
+
+.teacher
+    text-align: left
+    color: black
+    font-size: 20px
+    margin-left: 10px
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+        font-size: 14px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+        font-size: 14px
+    /* lg */
+    @media screen and ( max-width: 1024px )
+        font-size: 12px
+    /* md */
+    @media screen and ( max-width: 768px )
+        font-size: 12px
+    /* sm */
+    @media screen and ( max-width: 640px )
+        font-size: 14px
+    /* xs */
+    @media screen and ( max-width: 475px )
+        font-size: 14px
+
+
+.right
+    display: flex
+    justify-content: center
+    width: 40%
+    /* 2xl */
+    @media screen and ( max-width: 1536px )
+       width: 30%
+       height: 348px
+    /* xl */
+    @media screen and ( max-width: 1280px )
+       width: 30%
+       height: 348px
+    /* lg */
+    @media screen and ( max-width: 1024px )
+       width: 30%
+       height: 250px
+    /* md */
+    @media screen and ( max-width: 768px )
+       width: 30%
+       height: 259px
+    /* sm */
+    @media screen and ( max-width: 640px )
+       width: 100%
+       height: 348px
+    /* xs */
+    @media screen and ( max-width: 475px )
+       width: 70%
+       height: 269px
+       margin: 40px auto

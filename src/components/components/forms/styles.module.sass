@@ -23,7 +23,7 @@
             top: 0 
             right: -20px 
             transition: 0.5s 
-   @media screen and ( max-width: 991px )
+   @media screen and ( max-width: 776px )
       font-size: 16px
       padding: 8px 108px
       position: relative
@@ -47,6 +47,33 @@
          &:after 
             opacity: 1 
             right: 0 
+   /* 2xl */
+   @media screen and ( max-width: 1536px )
+      font-size: 16px
+   /* xl */
+   @media screen and ( max-width: 1280px )
+      font-size: 15px
+      width: 50% !important
+   /* lg */
+   @media screen and ( max-width: 1024px )
+      font-size: 14px
+      height: 30px
+      margin-bottom: 16px
+   /* md */
+   @media screen and ( max-width: 768px )
+      font-size: 14px
+      width: 47%
+   /* sm */
+   @media screen and ( max-width: 640px )
+      font-size: 14px
+      padding: 7px 72px
+      width: 32% !important
+   /* xs */
+   @media screen and ( max-width: 475px )
+      font-size: 14px
+      padding: 7px 72px
+      width: 32% !important
+
 
 .input
    width: 100%
@@ -58,16 +85,34 @@
    border-radius: 4px
    padding: 6px
    transition: .3s
-   margin: 10px
+   margin: 10px 0
    background: #fff
    @media screen and ( max-width: 991px )
    font-size: 18px
    @media screen and ( max-width: 767px )
-   font-size: 16px
-   &::placeholder
-   color: var(--color-black)
    &:focus
-   border-color: var(--color-primary)
+      border-color: var(--color-primary)
+   /* 2xl */
+   @media screen and ( max-width: 1536px )
+      font-size: 16px
+   /* xl */
+   @media screen and ( max-width: 1280px )
+      font-size: 15px
+   /* lg */
+   @media screen and ( max-width: 1024px )
+      font-size: 14px
+      height: 30px
+   /* md */
+   @media screen and ( max-width: 768px )
+      font-size: 14px
+      width: 72%
+   /* sm */
+   @media screen and ( max-width: 640px )
+      font-size: 14px
+   /* xs */
+   @media screen and ( max-width: 475px )
+      font-size: 14px
+
 
 .textarea
    width: 100%
@@ -80,21 +125,36 @@
    padding: 6px
    transition: .3s
    z-index: 0
-   margin: 10px
+   margin: 10px 0
    background: #fff
-   @media screen and ( max-width: 991px )
-   font-size: 18px
-   @media screen and ( max-width: 767px )
-   font-size: 16px
-   &::placeholder
-   color: var(--color-black)
    &:focus
-   border-color: var(--color-primary)
+      border-color: var(--color-primary)
+   /* 2xl */
+   @media screen and ( max-width: 1536px )
+      font-size: 16px
+   /* xl */
+   @media screen and ( max-width: 1280px )
+      font-size: 15px
+   /* lg */
+   @media screen and ( max-width: 1024px )
+      font-size: 14px
+      height: 90px
+   /* md */
+   @media screen and ( max-width: 768px )
+      font-size: 14px
+      width: 72%
+   /* sm */
+   @media screen and ( max-width: 640px )
+      font-size: 14px
+   /* xs */
+   @media screen and ( max-width: 475px )
+      font-size: 14px
+
 
 .fields
    display: flex
    flex-direction: column
-   align-items: flex-start
+   align-items: normal
    justify-content: flex-start
    width: 100%
    margin-bottom: 60px
@@ -113,7 +173,22 @@
       width: 80%
       margin: 0 auto
    &:last-child
-   margin-bottom: 0
+      margin-bottom: 0
+   /* 2xl */
+   @media screen and ( max-width: 1536px )
+   /* xl */
+   @media screen and ( max-width: 1280px )
+   /* lg */
+   @media screen and ( max-width: 1024px )
+   /* md */
+   @media screen and ( max-width: 768px )
+   /* sm */
+   @media screen and ( max-width: 640px )
+      width: 100%
+   /* xs */
+   @media screen and ( max-width: 475px )
+      width: 100%
+
 
 .contact_us_header
    margin-top: 20px

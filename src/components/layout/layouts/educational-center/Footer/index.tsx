@@ -16,9 +16,12 @@ import Phone from '@/components/icons/educational-center/Phone';
 
 // import { Courses } from '../../../../sanity/sanity-queries/courses';
 
-import styles from './styles.module.sass';
 import FormAppointment from '@/components/components/forms';
 import HeaderForm from '@/components/components/HeaderForm/HeaderForm';
+
+import { ArianAMU } from '@/constants/font';
+
+import styles from './styles.module.sass';
 
 
 type Props = {
@@ -50,7 +53,7 @@ const Footer: FC<Props> = ({ courses }) => {
         <div key={rowIndex} className={styles.row}>
             {
                 row.map((course: any) => (
-                    <Link key={course.slug} href={`/courses/${course.slug}`} aria-label={course.course_name} className={styles.link}>
+                    <Link key={course.slug} href={`/courses/${course.slug}`} aria-label={course.course_name} className={`${styles.link} ${ArianAMU.className}`}>
                         <p className={styles.copyright}>{course.course_name}</p>
                     </Link>
                 ))
@@ -70,7 +73,7 @@ const Footer: FC<Props> = ({ courses }) => {
                 </div>
                 <div className={styles.google_map}>
                     <Map width='100%' height='100%' />
-                    <p className={styles.address}>{t('adress.adress')}</p>
+                    <p className={`${styles.adress} ${ArianAMU.className}`}>{t('adress.adress')}</p>
                 </div>
                 <div className={styles.links}>
                     <div className={styles.courses_links}>
@@ -90,7 +93,7 @@ const Footer: FC<Props> = ({ courses }) => {
                                 height='20'
                                 fill='white'
                             />
-                            <p className={styles.info_web}>{t('contact.tell')} +374 77 11 11 11</p>
+                            <p className={`${styles.info_web} ${ArianAMU.className}`}>{t('contact.tell')} +374 77 11 11 11</p>
                         </Link>
                         <Link href='mailto:art.house@bk.ru' aria-label='Email' className={styles.icon}>
                             <Email
@@ -100,7 +103,7 @@ const Footer: FC<Props> = ({ courses }) => {
                             />
                             <p className={styles.info_web}>{t('contact.email')} art.house@bk.ru</p>
                         </Link>
-                        <p className={styles.info_web}>{t('adress.street')}</p>
+                        <p className={`${styles.info_web} ${ArianAMU.className}`}>{t('adress.street')}</p>
                     </div>
                 </div>
             </div>

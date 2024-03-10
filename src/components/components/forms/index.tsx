@@ -8,6 +8,8 @@ import InputField from '@/components/ui/InputField';
 import InputNumber from '@/components/ui/InputNumber';
 import TextareaField from '@/components/ui/TextareaField';
 
+import { ArianAMU } from '@/constants/font';
+
 import styles from './styles.module.sass';
 
 interface Props {
@@ -85,7 +87,7 @@ const FormAppointment: React.FC<Props> = ({ className, width, children }) => {
 			</div>
 			<div className={styles.fields}>
 				<InputField
-					className={cn(styles.input)}
+					className={cn(`${styles.input} ${ArianAMU.className}`)}
 					name='name'
 					type='name'
 					placeholder={t('contact-us.name')}
@@ -94,7 +96,7 @@ const FormAppointment: React.FC<Props> = ({ className, width, children }) => {
 					onChange={handleChange}
 				/>
 				<InputField
-					className={cn(styles.input)}
+					className={cn(`${styles.input} ${ArianAMU.className}`)}
 					name='email'
 					type='email'
 					placeholder={t('contact-us.email')}
@@ -103,7 +105,7 @@ const FormAppointment: React.FC<Props> = ({ className, width, children }) => {
 					onChange={handleChange}
 				/>
 				<InputNumber
-					className={cn(styles.input)}
+					className={cn(`${styles.input} ${ArianAMU.className}`)}
 					name='phone'
 					type='phone'
 					placeholder={t('contact-us.phone-number')}
@@ -113,7 +115,7 @@ const FormAppointment: React.FC<Props> = ({ className, width, children }) => {
 					onChange={handleChange}
 				/>
 				<TextareaField
-					className={cn(styles.textarea)}
+					className={cn(`${styles.textarea} ${ArianAMU.className}`)}
 					name='message'
 					placeholder={t('contact-us.message')}
 					requiredField={false}
@@ -121,7 +123,7 @@ const FormAppointment: React.FC<Props> = ({ className, width, children }) => {
 					onChange={handleChange}
 				/>
 			</div>
-			<button className={styles.submit} style={{ width }}>
+			<button className={`${styles.submit} ${ArianAMU.className}`} style={{ width }}>
 				{isLoading ?
 					`${t('contact-us.loading')}...`
 					:

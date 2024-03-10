@@ -8,9 +8,12 @@ import { useRouter } from 'next/router';
 import Button from '@/components/ui/Button';
 import Content from '@/components/ui/readMore';
 
+import { getCourseById } from '../../../../../../../sanity/services/educational-center-service/courses';
+
+import { ArianAMU } from '@/constants/font';
 
 import styles from './styles.module.sass';
-import { getCourseById } from '../../../../../../../sanity/services/educational-center-service/courses';
+
 
 type Props = {
     altTwo: string
@@ -22,6 +25,7 @@ type Props = {
     subtitle: string
     categories: any
 };
+
 
 const Course: FC<Props> = (course) => {
     const router = useRouter();
@@ -40,16 +44,16 @@ const Course: FC<Props> = (course) => {
     return (
         <div className={styles.course}>
             <div className={styles.content}>
-                <h3 className={styles.subtitle}>{course.subtitle}</h3>
+                <h3 className={`${styles.subtitle} ${ArianAMU.className}`}>{course.subtitle}</h3>
                 <Content content={course.content} isReadMore={isReadMore} />
                 <div className={styles.buttons_group}>
                     <Button
-                        className={styles.view_btn}
+                        className={`${styles.view_btn} ${ArianAMU.className}`}
                         text={isReadMore ? t('button.view-more') : t('button.show-less')}
                         onClick={toggleReadMore}
                     />
                     <Button
-                        className={styles.button}
+                        className={`${styles.button} ${ArianAMU.className}`}
                         text={t('button.contact-us')}
                         onClick={course.scrollToElement}
                     />

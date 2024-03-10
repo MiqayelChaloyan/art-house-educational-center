@@ -1,13 +1,16 @@
 import { FC } from 'react';
 
-import styles from './styles.module.sass';
 import Slider from '../Slider';
 
-type MainProps = {
-	data: any
+import { EDUCATIONAL_CENTER_DEFAULT } from '../../../../../../sanity/sanity-queries/educational-center';
+
+import styles from './styles.module.sass';
+
+type Props = {
+	data: EDUCATIONAL_CENTER_DEFAULT[]
 };
 
-const Header: FC<MainProps> = ({ data }) => {
+const Header: FC<Props> = ({ data }) => {
 	return (
 		<div id='header' className={styles.screen}>
 			<div className={styles.main}>

@@ -3,7 +3,6 @@ import { urlFor } from '../../../../sanity/imageUrlBuilder';
 import styles from './styles.module.sass';
 
 
-
 const Partner = ({ item }: any) => {
     const { alt } = item;
 
